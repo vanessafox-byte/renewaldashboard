@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renewals Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">R</div>
+          <div>
+            <p class="eyebrow">Renewals Team</p>
+            <h1>Renewals Dashboard</h1>
+          </div>
+        </div>
+
+        <section class="panel filters-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Controls</p>
+              <h2>Filters</h2>
+            </div>
+            <button id="resetFilters" class="ghost-button" type="button">Reset</button>
+          </div>
+
+          <div class="filter-grid">
+            <label>
+              <span>Quarter</span>
+              <select id="quarterFilter"></select>
+            </label>
+            <label>
+              <span>Owner</span>
+              <select id="ownerFilter"></select>
+            </label>
+            <label>
+              <span>Region</span>
+              <select id="regionFilter"></select>
+            </label>
+            <label>
+              <span>Outcome</span>
+              <select id="statusFilter"></select>
+            </label>
+          </div>
+
+          <div class="filter-note">
+            Data shown here is source-backed from the weekly renewals notes. Unattributed reductions stay under Unassigned rather than being mapped to a rep.
+          </div>
+        </section>
+
+        <section class="panel highlight-panel">
+          <p class="eyebrow">This Week</p>
+          <h2>Business Readout</h2>
+          <ul class="highlight-list" id="weeklyHighlights"></ul>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="panel">
+          <div class="page-nav">
+            <a class="page-link is-active" href="./index.html">Main Dashboard</a>
+            <a class="page-link" href="./trends.html">Trend Analysis</a>
+            <a class="page-link" href="./targets.html">Target Metrics</a>
+          </div>
+        </section>
+
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h2>Performance at a glance</h2>
+            <p class="hero-copy">
+              A clean, business-ready view of renewal performance across iCARR, seats, close-won activity, and contraction from revenue or seat reductions.
+            </p>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-label">Report Window</span>
+            <strong id="activeWindowLabel">Q2 2026 QTD</strong>
+          </div>
+        </section>
+
+        <section class="kpi-grid" id="kpiGrid"></section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Quick Access</p>
+              <h2>Rep Links</h2>
+            </div>
+            <p class="chart-caption">Click a rep to filter the dashboard and jump to their opportunities</p>
+          </div>
+          <div class="rep-links" id="repLinks"></div>
+        </section>
+
+        <section class="chart-grid">
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Trend</p>
+                <h2>Monthly iCARR</h2>
+              </div>
+              <p class="chart-caption">Expansion and retained value vs. revenue reduction</p>
+            </div>
+            <svg id="trendChart" viewBox="0 0 760 320" role="img" aria-label="Monthly iCARR trend chart"></svg>
+          </article>
+
+          <article class="panel chart-panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Team View</p>
+                <h2>Owner Performance</h2>
+              </div>
+              <p class="chart-caption">Net iCARR by owner, including close-lost revenue and seat reductions</p>
+            </div>
+            <svg id="ownerChart" viewBox="0 0 760 320" role="img" aria-label="Owner performance bar chart"></svg>
+          </article>
+        </section>
+
+        <section class="bottom-grid">
+          <article class="panel" id="opportunitySection">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Mix</p>
+                <h2>Renewal Outcomes</h2>
+              </div>
+              <p class="chart-caption">Count of opportunities by status</p>
+            </div>
+            <div class="outcome-wrap">
+              <svg id="outcomeChart" viewBox="0 0 320 320" role="img" aria-label="Renewal outcome donut chart"></svg>
+              <div class="legend" id="outcomeLegend"></div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Details</p>
+                <h2>Sourced Renewal Events</h2>
+              </div>
+              <p class="chart-caption">Q2 2026 QTD opportunity rows from the spreadsheet export</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Opportunity</th>
+                    <th>Owner</th>
+                    <th>Region</th>
+                    <th>Status</th>
+                    <th>iCARR</th>
+                    <th>Seats</th>
+                  </tr>
+                </thead>
+                <tbody id="opportunityTable"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

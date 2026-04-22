@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renewals Trend Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">R</div>
+          <div>
+            <p class="eyebrow">Renewals Team</p>
+            <h1>Trend Analysis</h1>
+          </div>
+        </div>
+
+        <section class="panel filters-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Controls</p>
+              <h2>Filters</h2>
+            </div>
+            <button id="resetFilters" class="ghost-button" type="button">Reset</button>
+          </div>
+
+          <div class="filter-grid">
+            <label>
+              <span>Quarter</span>
+              <select id="quarterFilter"></select>
+            </label>
+            <label>
+              <span>Owner</span>
+              <select id="ownerFilter"></select>
+            </label>
+            <label>
+              <span>Region</span>
+              <select id="regionFilter"></select>
+            </label>
+            <label>
+              <span>Outcome</span>
+              <select id="statusFilter"></select>
+            </label>
+          </div>
+
+          <div class="filter-note">
+            This page isolates note-based trend patterns and close-lost reasoning so the main dashboard stays focused on live performance.
+          </div>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="panel">
+          <div class="page-nav">
+            <a class="page-link" href="./index.html">Main Dashboard</a>
+            <a class="page-link is-active" href="./trends.html">Trend Analysis</a>
+            <a class="page-link" href="./targets.html">Target Metrics</a>
+          </div>
+        </section>
+
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Trends</p>
+            <h2>Seat Reduction And Churn Signals</h2>
+            <p class="hero-copy">
+              Review the biggest seat-reduction patterns and the most common close-lost reasons pulled from the spreadsheet notes.
+            </p>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-label">Report Window</span>
+            <strong id="activeWindowLabel">Q2 2026 QTD</strong>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Quick Access</p>
+              <h2>Rep Links</h2>
+            </div>
+            <p class="chart-caption">Click a rep to focus the trend view on that owner</p>
+          </div>
+          <div class="rep-links" id="repLinks"></div>
+        </section>
+
+        <section class="chart-grid">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Trends</p>
+                <h2>Seat Reduction Themes</h2>
+              </div>
+              <p class="chart-caption">Patterns pulled from close-won and contraction notes</p>
+            </div>
+            <svg id="seatTrendChart" viewBox="0 0 760 320" role="img" aria-label="Seat reduction theme chart"></svg>
+            <div class="trend-list" id="seatTrendList"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <p class="eyebrow">Trends</p>
+                <h2>Close-Lost Reasons</h2>
+              </div>
+              <p class="chart-caption">Most common reasons from close-lost fields</p>
+            </div>
+            <svg id="closeLostReasonChart" viewBox="0 0 760 320" role="img" aria-label="Close-lost reason chart"></svg>
+            <div class="reason-list" id="closeLostReasonList"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

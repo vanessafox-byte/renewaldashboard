@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renewals Target Metrics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">R</div>
+          <div>
+            <p class="eyebrow">Renewals Team</p>
+            <h1>Target Metrics</h1>
+          </div>
+        </div>
+
+        <section class="panel filters-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Controls</p>
+              <h2>Filters</h2>
+            </div>
+            <button id="resetFilters" class="ghost-button" type="button">Reset</button>
+          </div>
+
+          <div class="filter-grid">
+            <label>
+              <span>Quarter</span>
+              <select id="quarterFilter"></select>
+            </label>
+            <label>
+              <span>Owner</span>
+              <select id="ownerFilter"></select>
+            </label>
+            <label>
+              <span>Region</span>
+              <select id="regionFilter"></select>
+            </label>
+            <label>
+              <span>Outcome</span>
+              <select id="statusFilter"></select>
+            </label>
+          </div>
+
+          <div class="filter-note">
+            This page isolates target tracking so the main dashboard stays focused on performance and trend analysis.
+          </div>
+        </section>
+      </aside>
+
+      <main class="content">
+        <section class="panel">
+          <div class="page-nav">
+            <a class="page-link" href="./index.html">Main Dashboard</a>
+            <a class="page-link" href="./trends.html">Trend Analysis</a>
+            <a class="page-link is-active" href="./targets.html">Target Metrics</a>
+          </div>
+        </section>
+
+        <section class="hero">
+          <div>
+            <p class="eyebrow">Targets</p>
+            <h2>Rep Progress Versus Goal</h2>
+            <p class="hero-copy">
+              Track Q2 2026 QTD progress against individual seat, iCARR, and portfolio targets using the same spreadsheet-driven renewals data.
+            </p>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-label">Report Window</span>
+            <strong id="activeWindowLabel">Q2 2026 QTD</strong>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Quick Access</p>
+              <h2>Rep Links</h2>
+            </div>
+            <p class="chart-caption">Click a rep to filter the metrics for that owner</p>
+          </div>
+          <div class="rep-links" id="repLinks"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Targets</p>
+              <h2>Rep Target Tracker</h2>
+            </div>
+            <p class="chart-caption">Q2 2026 QTD progress versus seat, iCARR, and portfolio targets</p>
+          </div>
+          <div class="target-grid" id="targetGrid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
