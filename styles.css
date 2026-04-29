@@ -443,6 +443,55 @@ select:disabled {
   text-align: center;
 }
 
+.pto-range-grid,
+.buddy-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.pto-card,
+.buddy-card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.84);
+  padding: 16px 18px;
+}
+
+.pto-card-header,
+.buddy-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.pto-card-title,
+.buddy-card-title {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.pto-card-meta,
+.buddy-card-meta,
+.pto-card-subtext {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.pto-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: linear-gradient(180deg, rgba(184, 50, 128, 0.14), rgba(124, 58, 237, 0.1));
+  color: var(--accent);
+}
+
 .rep-link {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.98);
