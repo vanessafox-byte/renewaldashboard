@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Renewals Trend Analysis</title>
+    <title>Renewals Close-Lost Notes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
           <div class="brand-mark">R</div>
           <div>
             <p class="eyebrow">Renewals Team</p>
-            <h1>Trend Analysis</h1>
+            <h1>Close-Lost Notes</h1>
           </div>
         </div>
 
@@ -67,7 +67,7 @@
           </div>
 
           <div class="filter-note">
-            Use `QTD` for the full current quarter-to-date view, or switch to `Custom Range` to isolate any date window within the attached renewal export.
+            This tab is dedicated to close-lost renewals only, with the written deal notes from the spreadsheet export for easier churn review.
           </div>
         </section>
       </aside>
@@ -76,18 +76,18 @@
         <section class="panel">
           <div class="page-nav">
             <a class="page-link" href="./index.html">Main Dashboard</a>
-            <a class="page-link is-active" href="./trends.html">Trend Analysis</a>
+            <a class="page-link" href="./trends.html">Trend Analysis</a>
             <a class="page-link" href="./targets.html">Target Metrics</a>
-            <a class="page-link" href="./notes.html">Close-Lost Notes</a>
+            <a class="page-link is-active" href="./notes.html">Close-Lost Notes</a>
           </div>
         </section>
 
         <section class="hero">
           <div>
-            <p class="eyebrow">Trends</p>
-            <h2>Seat Reduction And Churn Signals</h2>
+            <p class="eyebrow">Notes</p>
+            <h2>Close-Lost Deal Context</h2>
             <p class="hero-copy">
-              Review the biggest seat-reduction patterns and the most common close-lost reasons pulled from the spreadsheet notes.
+              Review the written notes behind close-lost renewals, including the stated reason, rep ownership, and the affected revenue and seat contraction.
             </p>
           </div>
           <div class="hero-badge">
@@ -96,41 +96,28 @@
           </div>
         </section>
 
+        <section class="kpi-grid" id="closeLostSnapshot"></section>
+
         <section class="panel">
           <div class="panel-header">
             <div>
               <p class="eyebrow">Quick Access</p>
               <h2>Rep Links</h2>
             </div>
-            <p class="chart-caption">Click a rep to focus the trend view on that owner</p>
+            <p class="chart-caption">Click a rep to focus the close-lost notes on that owner</p>
           </div>
           <div class="rep-links" id="repLinks"></div>
         </section>
 
-        <section class="chart-grid">
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Trends</p>
-                <h2>Seat Reduction Themes</h2>
-              </div>
-              <p class="chart-caption">Patterns pulled from close-won and contraction notes</p>
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Details</p>
+              <h2>Close-Lost Renewal Notes</h2>
             </div>
-            <svg id="seatTrendChart" viewBox="0 0 760 320" role="img" aria-label="Seat reduction theme chart"></svg>
-            <div class="trend-list" id="seatTrendList"></div>
-          </article>
-
-          <article class="panel">
-            <div class="panel-header">
-              <div>
-                <p class="eyebrow">Trends</p>
-                <h2>Close-Lost Reasons</h2>
-              </div>
-              <p class="chart-caption">Most common reasons from close-lost fields</p>
-            </div>
-            <svg id="closeLostReasonChart" viewBox="0 0 760 320" role="img" aria-label="Close-lost reason chart"></svg>
-            <div class="reason-list" id="closeLostReasonList"></div>
-          </article>
+            <p class="chart-caption">Only close-lost opportunities from the spreadsheet export</p>
+          </div>
+          <div id="closeLostNotesList" class="notes-grid"></div>
         </section>
       </main>
     </div>

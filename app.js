@@ -1,88 +1,116 @@
 const opportunities = [
-  { account: "Renewal [2026] - GHA Technologies-Velocity Land", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -17760, seats: -37, totalCarr: 89760 },
-  { account: "Renewal [2026] - Odyssey Investment Partners-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 24000 },
-  { account: "Renewal [2026] - DFJ Growth Management LLC-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 12000 },
-  { account: "Renewal [2026] - Liontrust Asset Management-ChatGPT Enterprise", owner: "Aditya", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 2400, seats: 5, totalCarr: 24000 },
-  { account: "Renewal [2026] - BioWound Solutions-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 7200, seats: 15, totalCarr: 12000 },
-  { account: "Renewal [2026] - Kirton McConkie-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 24000, seats: 50, totalCarr: 88800 },
-  { account: "Renewal [2026] - Pacvue - ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -178440, seats: -529, totalCarr: 226440 },
-  { account: "Renewal [2026] - Lyles Services Co.-", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -13920, seats: -29, totalCarr: 61920 },
-  { account: "Renewal [2026] - Bernhard Capital Partners-ChatGPT Ent", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -12000, seats: -25, totalCarr: 24000 },
-  { account: "Renewal [2026] - interos.ai-", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -11520, seats: -24, totalCarr: 40320 },
-  { account: "Renewal [2026] - National Rural Utilities Cooperative Finance Corporation-ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 2400, seats: 5, totalCarr: 22080 },
-  { account: "Renewal [2026] - Ilex Capital-", owner: "Ashana", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 2400, seats: 5, totalCarr: 12000 },
-  { account: "Renewal [2026] - Javits-ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 3840, seats: 8, totalCarr: 15360 },
-  { account: "Renewal [2026] - IDEAYA Biosciences - Renewal", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 38400, seats: 80, totalCarr: 105600 },
-  { account: "Renewal [2026] - Exostar-ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -50880, seats: -106, totalCarr: 36000 },
-  { account: "Renewal [2026] - GiveDirectly-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -38400, seats: 12, totalCarr: 21360 },
-  { account: "Renewal [2026] - BDT & MSD - ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -29400, seats: -50, totalCarr: 240000 },
-  { account: "Renewal [2026] - Piping Rock Health Products, Inc", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -6720, seats: -14, totalCarr: 168000 },
-  { account: "Renewal [2026] - Vane Brothers (ChatGPT 25)-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 12000 },
-  { account: "Renewal [2026] - Great Elm Group, Inc.-ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 24000 },
-  { account: "Renewal [2026] - First Round - ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 480, seats: 1, totalCarr: 27360 },
-  { account: "Renewal [2026] - Allen & Company-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 3840, seats: 8, totalCarr: 44160 },
-  { account: "Renewal [2026] - CareDx Inc. // ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 3840, seats: 8, totalCarr: 46080 },
-  { account: "Renewal [2026] - CU Direct Corporation-ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 10560, seats: 22, totalCarr: 22560 },
-  { account: "Renewal [2026] - First Eagle Investments - ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 19200, seats: 40, totalCarr: 120000 },
-  { account: "Renewal [2026] - Playground Tech-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -38880, seats: -81, totalCarr: 38880 },
-  { account: "Renewal [2026] - The Extreme Light Infrastructure ERIC-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -37320, seats: 46, totalCarr: 66720 },
-  { account: "Renewal [2026] - Columbia Road-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -33600, seats: -70, totalCarr: 33600 },
-  { account: "Renewal [2026] - Alto Solutions Inc-ChatGPT Enterprise", owner: "Ebel", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -26760, seats: -55, totalCarr: 40800 },
-  { account: "Renewal [2026] - Culture AI-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -19200, seats: -40, totalCarr: 19200 },
-  { account: "Renewal [2026] - EUC - Chat", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -13740, seats: -57, totalCarr: 45340 },
-  { account: "Renewal [2026] - Best in Parking AG-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -4200, seats: 0, totalCarr: 24000 },
-  { account: "Renewal [2026] - Stonepeak Partners", owner: "Ebel", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -720, seats: 11, totalCarr: 114000 },
-  { account: "Renewal [2026] - Leave a Nest - ChatGPT 150 seats", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 72000 },
-  { account: "Renewal [2026] - Brighter Super-ChatGPT Enterprise", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 4320, seats: 9, totalCarr: 14880 },
-  { account: "Renewal [2026] - Polar Capital Partners Ltd - ChatGPT Enterprise", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 8160, seats: 17, totalCarr: 72000 },
-  { account: "Renewal [2026] - Admiral Pioneer - ChatGPT Enterprise", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 12000, seats: 25, totalCarr: 72000 },
-  { account: "Renewal [2026] - Lucid Group Communications - ChatGPT Enterprise (CBP)", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 23760, seats: -60, totalCarr: 172800 },
-  { account: "Renewal [2026] - Herse Information Co. Ltd - ChatGPT Enterprise", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 51840, seats: 108, totalCarr: 172800 },
-  { account: "Renewal [2026] - AlloSource-ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -30480, seats: 2, totalCarr: 46080 },
-  { account: "Renewal [2026] - CIRA (Canadian Internet Registration Authority)-", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -17160, seats: 59, totalCarr: 36360 },
-  { account: "Renewal [2026] - Merchant Capital LLC-ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -12000, seats: -25, totalCarr: 24000 },
-  { account: "Renewal [2026] - Liberty Tax Services - ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -4320, seats: -9, totalCarr: 41760 },
-  { account: "Renewal [2026] - LRN- ChatGPT Enterprise", owner: "Lakshay", region: "Unspecified", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 96000 },
-  { account: "Renewal [2026] - Prospect Administration - ChatGPT Enterprise - Land 100", owner: "Lakshay", region: "Unspecified", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 1068, seats: 5, totalCarr: 51948 },
-  { account: "Renewal [2026] - Redwood Trust Inc.-ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 15660, seats: 29, totalCarr: 132840 },
-  { account: "Renewal [2026] - Emerson Collective, LLC - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -50160, seats: 0, totalCarr: 75240 },
-  { account: "Renewal [2026] - ISI Enterprises - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -36960, seats: -77, totalCarr: 72960 },
-  { account: "Renewal [2026] - John D. and Catherine T. MacArthur Foundation-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -34920, seats: 23, totalCarr: 56520 },
-  { account: "Renewal [2026] - Ampsight, Inc. (ChatGPT 40)-", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -24480, seats: -51, totalCarr: 24480 },
-  { account: "Renewal [2026] - iSeatz - Renewal", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -14400, seats: -30, totalCarr: 57600 },
-  { account: "Renewal [2026] - FCP- ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -12480, seats: -26, totalCarr: 12480 },
-  { account: "Renewal [2026] - GS1 US-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -12000, seats: -25, totalCarr: 12000 },
-  { account: "Renewal [2026] - Purewest Resources Inc-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -9600, seats: -20, totalCarr: 91200 },
-  { account: "Renewal [2026] - Income Research + Management-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 39840 },
-  { account: "Renewal [2026] - VeriSign - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 72000 },
-  { account: "Renewal [2026] - CLV Group - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 480, seats: 1, totalCarr: 19200 },
-  { account: "Renewal [2026] - OddBytes Inc. - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 960, seats: 2, totalCarr: 66240 },
-  { account: "Renewal [2026] - Heaven Hill Brands- chatgpt 400 CBP", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 52140, seats: 25, totalCarr: 333120 },
-  { account: "Renewal [2026] - Atomico- ChatGPT Enterprise", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -16800, seats: -35, totalCarr: 28800 },
-  { account: "Renewal [2026] - Davidson Technology Consulting-NB-Cbiz-100", owner: "Nicolas", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 48000 },
-  { account: "Renewal [2026] - Pensjonskassen for helseforetakene i hovedstadsomradet (PKH)-", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 10296 },
-  { account: "Renewal [2026] - Mutuelle Previfrance-", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 9900 },
-  { account: "Renewal [2026] - Shenkman Capital Management Inc.-ChatGPT Enterprise", owner: "Nicolas", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 4320, seats: 12, totalCarr: 51840 },
-  { account: "Renewal [2026] - Quantum Rise, Inc.-ChatGPT Enterprise", owner: "Nicolas", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 5280, seats: 11, totalCarr: 17280 },
-  { account: "Renewal [2026] - Cydcor, LLC-ChatGPT Enterprise", owner: "Nicolas", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 5760, seats: 12, totalCarr: 73440 },
-  { account: "Renewal [2026] - Jones & Wagener - ChatGPT Enterprise", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 7200, seats: 15, totalCarr: 72000 },
-  { account: "Renewal [2026] - Prophix - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -104160, seats: -217, totalCarr: 152160 },
-  { account: "Renewal [2026] - HCI Equity Partners-", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-lost", icarr: -12000, seats: -25, totalCarr: 12000 },
-  { account: "Renewal [2026] - Waterfall Asset Management - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 24000 },
-  { account: "Renewal [2026] - Day One Biopharmaceuticals-", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 5280, seats: 11, totalCarr: 78240 },
-  { account: "Renewal [2026] - AAA Life - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 24000, seats: 50, totalCarr: 72000 },
-  { account: "Renewal [2026] - Monobank - ChatGPT Enterprise", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -62400, seats: -130, totalCarr: 144000 },
-  { account: "Renewal [2026] - AppOmni Inc - ChatGPT Enterprise", owner: "Victor", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -36000, seats: -75, totalCarr: 84000 },
-  { account: "Renewal [2026] - InterRent-New Business", owner: "Victor", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: -1920, seats: -4, totalCarr: 53280 },
-  { account: "Renewal [2026] - ECE Real Estate Partners GmbH-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 24000 },
-  { account: "Renewal [2026] - echion Corporate Communication AG-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 0, seats: 0, totalCarr: 12000 },
-  { account: "Renewal [2026] - Apax Partners - ChatGPT Enterprise", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 2400, seats: 5, totalCarr: 155520 },
-  { account: "Renewal [2026] - TBK Automatisierung und Messtechnik GmbH-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 3780, seats: 0, totalCarr: 17820 },
-  { account: "Renewal [2026] - Integra Capital - Renewal", owner: "Victor", region: "LATAM", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 3840, seats: 8, totalCarr: 84000 },
-  { account: "Renewal [2026] - GIZEH Raucherbedarf GmbH", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 4800, seats: 10, totalCarr: 62880 },
-  { account: "Renewal [2026] - Lysa AB-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 8160, seats: 17, totalCarr: 34560 },
-  { account: "Renewal [2026] - Ward Law Group, PL-", owner: "Victor", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 13500, seats: 55, totalCarr: 76800 },
-  { account: "Renewal [2026] - Zelestra-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", status: "close-won", icarr: 75000, seats: 200, totalCarr: 147000 }
+  { account: "Renewal [2026] - GHA Technologies-Velocity Land", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -17760, seats: -37, totalCarr: 89760 },
+  { account: "Renewal [2026] - Lyles Services Co.-", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["org-cleanup"], icarr: -13920, seats: -29, totalCarr: 61920 },
+  { account: "Renewal [2026] - Playground Tech-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-lost", closeLostReason: "Did not recognize full value", closeLostNote: "Please check Deals note for Churn Interview questions", trendTags: [], icarr: -38880, seats: -81, totalCarr: 38880 },
+  { account: "Renewal [2026] - Columbia Road-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-lost", closeLostReason: "Did not recognize full value", closeLostNote: "SaaS budget for the year and do not see full value", trendTags: ["budget-pricing"], icarr: -33600, seats: -70, totalCarr: 33600 },
+  { account: "Renewal [2026] - Culture AI-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-lost", closeLostReason: "Pricing too high", closeLostNote: "We only require 5-10 seats so the current package for 25-50 employees is far too expensive to maintained ENT, not interested in Business.", trendTags: [], icarr: -19200, seats: -40, totalCarr: 19200 },
+  { account: "Renewal [2026] - Stonepeak Partners", owner: "Ebel", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -720, seats: 11, totalCarr: 114000 },
+  { account: "Renewal [2026] - Herse Information Co. Ltd - ChatGPT Enterprise", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 51840, seats: 108, totalCarr: 172800 },
+  { account: "Renewal [2026] - CIRA (Canadian Internet Registration Authority)-", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -17160, seats: 59, totalCarr: 36360 },
+  { account: "Renewal [2026] - Income Research + Management-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 39840 },
+  { account: "Renewal [2026] - Quantum Rise, Inc.-ChatGPT Enterprise", owner: "Nicolas", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: 5280, seats: 11, totalCarr: 17280 },
+  { account: "Renewal [2026] - Waterfall Asset Management - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 24000 },
+  { account: "Renewal [2026] - GIZEH Raucherbedarf GmbH", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 4800, seats: 10, totalCarr: 62880 },
+  { account: "Renewal [2026] - Zelestra-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-01", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift", "budget-pricing"], icarr: 75000, seats: 200, totalCarr: 147000 },
+  { account: "Renewal [2026] - Brighter Super-ChatGPT Enterprise", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-02", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 4320, seats: 9, totalCarr: 14880 },
+  { account: "Renewal [2026] - Atomico- ChatGPT Enterprise", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-02", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift", "budget-pricing"], icarr: -16800, seats: -35, totalCarr: 28800 },
+  { account: "Renewal [2026] - Integra Capital - Renewal", owner: "Victor", region: "LATAM", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-02", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 3840, seats: 8, totalCarr: 84000 },
+  { account: "Renewal [2026] - IDEAYA Biosciences - Renewal", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-03", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 38400, seats: 80, totalCarr: 105600 },
+  { account: "Renewal [2026] - BDT & MSD - ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-06", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift"], icarr: -29400, seats: -50, totalCarr: 240000 },
+  { account: "Renewal [2026] - Purewest Resources Inc-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-06", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -9600, seats: -20, totalCarr: 91200 },
+  { account: "Renewal [2026] - CLV Group - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-06", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 480, seats: 1, totalCarr: 19200 },
+  { account: "Renewal [2026] - HCI Equity Partners-", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-06", status: "close-lost", closeLostReason: "Competitor", closeLostNote: "Originally wanted to downsize the workspace size from 25 to 5 which is not possible with ChatGPT Enterprise. They have now decided to switch to Claude.", trendTags: ["competitive-shift"], icarr: -12000, seats: -25, totalCarr: 12000 },
+  { account: "Renewal [2026] - Javits-ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 3840, seats: 8, totalCarr: 15360 },
+  { account: "Renewal [2026] - The Extreme Light Infrastructure ERIC-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: -37320, seats: 46, totalCarr: 66720 },
+  { account: "Renewal [2026] - Alto Solutions Inc-ChatGPT Enterprise", owner: "Ebel", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -26760, seats: -55, totalCarr: 40800 },
+  { account: "Renewal [2026] - Redwood Trust Inc.-ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: 15660, seats: 29, totalCarr: 132840 },
+  { account: "Renewal [2026] - AppOmni Inc - ChatGPT Enterprise", owner: "Victor", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift"], icarr: -36000, seats: -75, totalCarr: 84000 },
+  { account: "Renewal [2026] - InterRent-New Business", owner: "Victor", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -1920, seats: -4, totalCarr: 53280 },
+  { account: "Renewal [2026] - Lysa AB-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-07", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 8160, seats: 17, totalCarr: 34560 },
+  { account: "Renewal [2026] - Admiral Pioneer - ChatGPT Enterprise", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-08", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 12000, seats: 25, totalCarr: 72000 },
+  { account: "Renewal [2026] - Shenkman Capital Management Inc.-ChatGPT Enterprise", owner: "Nicolas", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-08", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: 4320, seats: 12, totalCarr: 51840 },
+  { account: "Renewal [2026] - TBK Automatisierung und Messtechnik GmbH-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-08", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 3780, seats: 0, totalCarr: 17820 },
+  { account: "Renewal [2026] - National Rural Utilities Cooperative Finance Corporation-ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-09", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 2400, seats: 5, totalCarr: 22080 },
+  { account: "Renewal [2026] - ISI Enterprises - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-09", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -36960, seats: -77, totalCarr: 72960 },
+  { account: "Renewal [2026] - Vane Brothers (ChatGPT 25)-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-10", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 12000 },
+  { account: "Renewal [2026] - CareDx Inc. // ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-10", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 3840, seats: 8, totalCarr: 46080 },
+  { account: "Renewal [2026] - CU Direct Corporation-ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-10", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 10560, seats: 22, totalCarr: 22560 },
+  { account: "Renewal [2026] - First Eagle Investments - ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-10", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 19200, seats: 40, totalCarr: 120000 },
+  { account: "Renewal [2026] - Jones & Wagener - ChatGPT Enterprise", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-10", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 7200, seats: 15, totalCarr: 72000 },
+  { account: "Renewal [2026] - Liontrust Asset Management-ChatGPT Enterprise", owner: "Aditya", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-13", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 2400, seats: 5, totalCarr: 24000 },
+  { account: "Renewal [2026] - Great Elm Group, Inc.-ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-13", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 24000 },
+  { account: "Renewal [2026] - Leave a Nest - ChatGPT 150 seats", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-13", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 72000 },
+  { account: "Renewal [2026] - iSeatz - Renewal", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-13", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -14400, seats: -30, totalCarr: 57600 },
+  { account: "Renewal [2026] - Cydcor, LLC-ChatGPT Enterprise", owner: "Nicolas", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-13", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: 5760, seats: 12, totalCarr: 73440 },
+  { account: "Renewal [2026] - Monobank - ChatGPT Enterprise", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-13", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: -62400, seats: -130, totalCarr: 144000 },
+  { account: "Renewal [2026] - BioWound Solutions-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-14", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 7200, seats: 15, totalCarr: 12000 },
+  { account: "Renewal [2026] - Kirton McConkie-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-14", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 24000, seats: 50, totalCarr: 88800 },
+  { account: "Renewal [2026] - Lucid Group Communications - ChatGPT Enterprise (CBP)", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-14", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 23760, seats: -60, totalCarr: 172800 },
+  { account: "Renewal [2026] - LRN- ChatGPT Enterprise", owner: "Lakshay", region: "Unspecified", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-14", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift", "budget-pricing"], icarr: 0, seats: 0, totalCarr: 96000 },
+  { account: "Renewal [2026] - Prospect Administration - ChatGPT Enterprise - Land 100", owner: "Lakshay", region: "Unspecified", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-14", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift"], icarr: 1068, seats: 5, totalCarr: 51948 },
+  { account: "Renewal [2026] - echion Corporate Communication AG-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-14", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 12000 },
+  { account: "Renewal [2026] - First Round - ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: 480, seats: 1, totalCarr: 27360 },
+  { account: "Renewal [2026] - EUC - Chat", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: -13740, seats: -57, totalCarr: 45340 },
+  { account: "Renewal [2026] - Polar Capital Partners Ltd - ChatGPT Enterprise", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 8160, seats: 17, totalCarr: 72000 },
+  { account: "Renewal [2026] - OddBytes Inc. - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 960, seats: 2, totalCarr: 66240 },
+  { account: "Renewal [2026] - Heaven Hill Brands- chatgpt 400 CBP", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 52140, seats: 25, totalCarr: 333120 },
+  { account: "Renewal [2026] - Day One Biopharmaceuticals-", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 5280, seats: 11, totalCarr: 78240 },
+  { account: "Renewal [2026] - Apax Partners - ChatGPT Enterprise", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-15", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 2400, seats: 5, totalCarr: 155520 },
+  { account: "Renewal [2026] - Liberty Tax Services - ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-16", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["org-cleanup"], icarr: -4320, seats: -9, totalCarr: 41760 },
+  { account: "Renewal [2026] - VeriSign - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-16", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 72000 },
+  { account: "Renewal [2026] - Davidson Technology Consulting-NB-Cbiz-100", owner: "Nicolas", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-16", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: 0, seats: 0, totalCarr: 48000 },
+  { account: "Renewal [2026] - Prophix - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-16", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift"], icarr: -104160, seats: -217, totalCarr: 152160 },
+  { account: "Renewal [2026] - Ward Law Group, PL-", owner: "Victor", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-16", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: 13500, seats: 55, totalCarr: 76800 },
+  { account: "Renewal [2026] - Exostar-ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-17", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing", "competitive-shift"], icarr: -50880, seats: -106, totalCarr: 36000 },
+  { account: "Renewal [2026] - AlloSource-ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-17", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: -30480, seats: 2, totalCarr: 46080 },
+  { account: "Renewal [2026] - Pensjonskassen for helseforetakene i hovedstadsomr\u00e5det (PKH)-", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-17", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 10296 },
+  { account: "Renewal [2026] - Odyssey Investment Partners-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 24000 },
+  { account: "Renewal [2026] - GiveDirectly-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -38400, seats: 12, totalCarr: 21360 },
+  { account: "Renewal [2026] - Allen & Company-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: 3840, seats: 8, totalCarr: 44160 },
+  { account: "Renewal [2026] - Best in Parking AG-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -4200, seats: 0, totalCarr: 24000 },
+  { account: "Renewal [2026] - Merchant Capital LLC-ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: -12000, seats: -25, totalCarr: 24000 },
+  { account: "Renewal [2026] - Ampsight, Inc. (ChatGPT 40)-", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-lost", closeLostReason: "Self Service fits needs", closeLostNote: "They have the need for only 2 seats. - Over Purchased last term.", trendTags: ["right-sizing"], icarr: -24480, seats: -51, totalCarr: 24480 },
+  { account: "Renewal [2026] - GS1 US-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-lost", closeLostReason: "Timing", closeLostNote: "They asked for a month extension because they believed their renewal ended in May. They said they will reach out when they are ready but agree to churn for now.", trendTags: [], icarr: -12000, seats: -25, totalCarr: 12000 },
+  { account: "Renewal [2026] - ECE Real Estate Partners GmbH-", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-20", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 24000 },
+  { account: "Renewal [2026] - DFJ Growth Management LLC-ChatGPT Enterprise", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 12000 },
+  { account: "Renewal [2026] - Bernhard Capital Partners-ChatGPT Ent", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift", "budget-pricing"], icarr: -12000, seats: -25, totalCarr: 24000 },
+  { account: "Renewal [2026] - interos.ai-", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["org-cleanup"], icarr: -11520, seats: -24, totalCarr: 40320 },
+  { account: "Renewal [2026] - Ilex Capital-", owner: "Ashana", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: 2400, seats: 5, totalCarr: 12000 },
+  { account: "Renewal [2026] - Piping Rock Health Products, Inc", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -6720, seats: -14, totalCarr: 168000 },
+  { account: "Renewal [2026] - Emerson Collective, LLC - ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -50160, seats: 0, totalCarr: 75240 },
+  { account: "Renewal [2026] - John D. and Catherine T. MacArthur Foundation-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["budget-pricing"], icarr: -34920, seats: 23, totalCarr: 56520 },
+  { account: "Renewal [2026] - AAA Life - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-21", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 24000, seats: 50, totalCarr: 72000 },
+  { account: "Renewal [2026] - Bezos Earth Fund - ChatGPT Enterprise (NPF)", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-22", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -10800, seats: 10, totalCarr: 7200 },
+  { account: "Renewal [2026] - Pacvue - ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-22", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["competitive-shift"], icarr: -178440, seats: -529, totalCarr: 226440 },
+  { account: "Renewal [2026] - FCP- ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-22", status: "close-lost", closeLostReason: "Did not recognize full value", closeLostNote: "They will not answer my emails or calls now that they have told us they want to churn.", trendTags: [], icarr: -12480, seats: -26, totalCarr: 12480 },
+  { account: "Renewal [2026] - Mutuelle Pr\u00e9vifrance-", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-22", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 9900 },
+  { account: "Renewal [2026] - PubNub Inc.- ChatGPT Enterprise SMB", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing", "budget-pricing"], icarr: -4320, seats: -9, totalCarr: 36960 },
+  { account: "Renewal [2026] - Landratsamt Regensburg-", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -2400, seats: 16, totalCarr: 49920 },
+  { account: "Renewal [2026] - ?????? (IGPI) - Renewal", owner: "Ebel", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 0, seats: 0, totalCarr: 85920 },
+  { account: "Renewal [2026] - Lansigt-Chat", owner: "Ebel", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 4800, seats: 10, totalCarr: 12000 },
+  { account: "Renewal [2026] - Charles Pankow Builders, LTD- ChatGPT Enterprise Land", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-lost", closeLostReason: "Competitor", closeLostNote: "Customer has decided to move to an aggregate service that allows access to more LLMs", trendTags: ["competitive-shift"], icarr: -41760, seats: -87, totalCarr: 41760 },
+  { account: "Renewal [2026] - Pearl Meyer - ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 1440, seats: 3, totalCarr: 70560 },
+  { account: "Renewal [2026] - LOVOO- ChatGPT Enterprise", owner: "Victor", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-23", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -26400, seats: -55, totalCarr: 127200 },
+  { account: "Renewal [2026] - The Bazooka Companies, LLC-", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-24", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing", "budget-pricing"], icarr: -21600, seats: -45, totalCarr: 33600 },
+  { account: "Renewal [2026] - PennantPark Investment Advisers, LLC-", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-24", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing", "org-cleanup"], icarr: -13440, seats: -28, totalCarr: 32160 },
+  { account: "Renewal [2026] - Northshore- ChatGPT Enterprise", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-24", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -4320, seats: -9, totalCarr: 18240 },
+  { account: "Renewal [2026] - Discovery Education, Inc-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-24", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -2496, seats: -8, totalCarr: 15600 },
+  { account: "Renewal [2026] - Auger Inc.-", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-24", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: 396, seats: 1, totalCarr: 59004 },
+  { account: "Renewal [2026] - Oats Overnight, Inc.-ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-27", status: "close-lost", closeLostReason: "Did not recognize full value", closeLostNote: "Customer said they wanted a a month-to-month arrangement on Enterprise, or a quarterly agreement. If not, they would fallback.", trendTags: [], icarr: -75360, seats: -157, totalCarr: 75360 },
+  { account: "Renewal [2026] - ScaleOps Labs Ltd.- Velocity Land", owner: "Ashana", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-27", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 2472, seats: 8, totalCarr: 50880 },
+  { account: "Renewal [2026] - Kwest Group - ChatGPT Enterprise", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-27", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 3360, seats: 7, totalCarr: 39840 },
+  { account: "Renewal [2026] - Insurify, Inc-", owner: "Ashana", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-27", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 26400, seats: 55, totalCarr: 93600 },
+  { account: "Renewal [2026] - Rubicon Founders-ChatGPT Enterprise", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-27", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -1920, seats: -4, totalCarr: 24000 },
+  { account: "Renewal [2026] - Fractyl - OpenAI", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-27", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing", "budget-pricing"], icarr: -17760, seats: -37, totalCarr: 41760 },
+  { account: "Renewal [2026] - Once Upon a Farm-", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -2400, seats: -5, totalCarr: 33600 },
+  { account: "Trexquant - API + ChatGPT - Renewal (2026)", owner: "Aditya", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 8160, seats: 17, totalCarr: 137840 },
+  { account: "Renewal [2026] - Korea Investment Corporation - Chatgpt 150 license", owner: "Ashana", region: "APAC", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 17760, seats: 37, totalCarr: 126240 },
+  { account: "Renewal [2026] - Cincinnati Zoo-NPF Chat Land", owner: "Chantal", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: ["right-sizing"], icarr: -12000, seats: 0, totalCarr: 18000 },
+  { account: "Renewal [2026] - Ninedot Holdings, Inc. - Renewal", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 1344, seats: 4, totalCarr: 26880 },
+  { account: "Renewal [2026] - Stoneage Tools- ChatGPT Enterprise", owner: "Lakshay", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 2400, seats: 5, totalCarr: 49920 },
+  { account: "Renewal [2026] - Van Eck - Early Renewal", owner: "Lori", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: -159960, seats: -524, totalCarr: 255960 },
+  { account: "Renewal (2026) - Arquimea Group", owner: "Nicolas", region: "EMEA", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 130560, seats: 29, totalCarr: 164640 },
+  { account: "Renewal [2026] - Beveridge & Diamond - ChatGPT Enterprise", owner: "Tyler", region: "AMER", segment: "Renewal", quarter: "Q2 2026", month: "Apr", closeDate: "2026-04-28", status: "close-won", closeLostReason: "", closeLostNote: "", trendTags: [], icarr: 14400, seats: 30, totalCarr: 96000 },
 ];
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
@@ -103,42 +131,34 @@ const outcomeColors = {
   "close-won": "#0f766e",
   "close-lost": "#c2410c"
 };
-const seatTrendData = [
+const trendThemeMeta = [
   {
+    key: "right-sizing",
     title: "Right-sizing to active usage",
-    count: 16,
-    seats: 1301,
     copy: "The most common contraction pattern is reducing to active users or current MAU, often after over-buying in the prior term."
   },
   {
+    key: "competitive-shift",
     title: "Competitive or multi-tool shift",
-    count: 8,
-    seats: 1084,
     copy: "Several accounts reduced seats because teams moved workflows to Claude, Copilot, or other tools better aligned to technical or office workflows."
   },
   {
+    key: "budget-pricing",
     title: "Budget and pricing pressure",
-    count: 4,
-    seats: 147,
     copy: "A smaller but recurring trend is price sensitivity, discount pressure, and budget constraints leading to smaller renewals or churn."
   },
   {
+    key: "org-cleanup",
     title: "Org cleanup and departed users",
-    count: 2,
-    seats: 33,
     copy: "A narrower theme is cleanup from departed employees, duplicate seats, and identity-management issues."
   }
-];
-const closeLostReasonData = [
-  { reason: "Did not recognize full value", count: 3 },
-  { reason: "Pricing too high", count: 1 },
-  { reason: "Self Service fits needs", count: 1 },
-  { reason: "Timing", count: 1 },
-  { reason: "Competitor", count: 1 }
 ];
 
 const filters = {
   quarter: qtdQuarter,
+  dateMode: "qtd",
+  startDate: "",
+  endDate: "",
   owner: "All",
   region: "All",
   status: "All"
@@ -146,12 +166,18 @@ const filters = {
 
 const filterElements = {
   quarter: document.getElementById("quarterFilter"),
+  dateMode: document.getElementById("dateModeFilter"),
+  startDate: document.getElementById("startDateFilter"),
+  endDate: document.getElementById("endDateFilter"),
   owner: document.getElementById("ownerFilter"),
   region: document.getElementById("regionFilter"),
   status: document.getElementById("statusFilter")
 };
 
 const unique = (key) => [...new Set(opportunities.map((item) => item[key]))];
+const quarterRows = opportunities.filter((item) => item.quarter === qtdQuarter);
+const qtdStartDate = quarterRows.reduce((min, item) => (item.closeDate < min ? item.closeDate : min), quarterRows[0]?.closeDate ?? "");
+const qtdEndDate = quarterRows.reduce((max, item) => (item.closeDate > max ? item.closeDate : max), quarterRows[0]?.closeDate ?? "");
 const getVisibleMonths = (data) => {
   const presentMonths = new Set(data.map((item) => item.month));
   return months.filter((month) => presentMonths.has(month));
@@ -178,6 +204,15 @@ function integer(value) {
   return new Intl.NumberFormat("en-US").format(value);
 }
 
+function formatDateLabel(value) {
+  if (!value) return "";
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  }).format(new Date(`${value}T00:00:00`));
+}
+
 function populateSelect(select, values) {
   select.innerHTML = ["All", ...values]
     .map((value) => `<option value="${value}">${value}</option>`)
@@ -186,13 +221,42 @@ function populateSelect(select, values) {
 
 function applyFilters(data) {
   return data.filter((item) => {
+    const isInDateRange =
+      filters.dateMode !== "custom" ||
+      ((!filters.startDate || item.closeDate >= filters.startDate) &&
+        (!filters.endDate || item.closeDate <= filters.endDate));
     return (
       (filters.quarter === "All" || item.quarter === filters.quarter) &&
+      isInDateRange &&
       (filters.owner === "All" || item.owner === filters.owner) &&
       (filters.region === "All" || item.region === filters.region) &&
       (filters.status === "All" || item.status === filters.status)
     );
   });
+}
+
+function buildSeatTrendData(data) {
+  return trendThemeMeta.map((theme) => {
+    const rows = data.filter((item) => item.trendTags.includes(theme.key) && item.seats !== 0);
+    return {
+      ...theme,
+      count: rows.length,
+      seats: rows.reduce((sum, item) => sum + Math.abs(item.seats), 0)
+    };
+  });
+}
+
+function buildCloseLostReasonData(data) {
+  const counts = data
+    .filter((item) => item.closeLostReason)
+    .reduce((map, item) => {
+      map.set(item.closeLostReason, (map.get(item.closeLostReason) || 0) + 1);
+      return map;
+    }, new Map());
+
+  return [...counts.entries()]
+    .map(([reason, count]) => ({ reason, count }))
+    .sort((a, b) => b.count - a.count || a.reason.localeCompare(b.reason));
 }
 
 function buildKpis(data) {
@@ -322,10 +386,12 @@ function renderTargetTracker(data) {
     .join("");
 }
 
-function renderTrendInsights() {
+function renderTrendInsights(data) {
   if (!document.getElementById("seatTrendList") || !document.getElementById("closeLostReasonList")) return;
-  renderSeatTrendChart();
-  renderCloseLostReasonChart();
+  const seatTrendData = buildSeatTrendData(data);
+  const closeLostReasonData = buildCloseLostReasonData(data);
+  renderSeatTrendChart(seatTrendData);
+  renderCloseLostReasonChart(closeLostReasonData);
 
   document.getElementById("seatTrendList").innerHTML = seatTrendData
     .map(
@@ -338,6 +404,11 @@ function renderTrendInsights() {
       `
     )
     .join("");
+
+  if (!closeLostReasonData.length) {
+    document.getElementById("closeLostReasonList").innerHTML = `<div class="reason-row"><div class="reason-title">No close-lost reasons in scope</div><div class="reason-meta">Adjust the date window or filters to inspect churn reasons.</div></div>`;
+    return;
+  }
 
   const maxCount = Math.max(...closeLostReasonData.map((item) => item.count));
   document.getElementById("closeLostReasonList").innerHTML = closeLostReasonData
@@ -355,7 +426,7 @@ function renderTrendInsights() {
     .join("");
 }
 
-function renderSeatTrendChart() {
+function renderSeatTrendChart(seatTrendData) {
   const svg = document.getElementById("seatTrendChart");
   if (!svg) return;
   const width = 760;
@@ -388,7 +459,7 @@ function renderSeatTrendChart() {
   `;
 }
 
-function renderCloseLostReasonChart() {
+function renderCloseLostReasonChart(closeLostReasonData) {
   const svg = document.getElementById("closeLostReasonChart");
   if (!svg) return;
   const width = 760;
@@ -397,6 +468,10 @@ function renderCloseLostReasonChart() {
   const chartWidth = width - margin.left - margin.right;
   const barHeight = 34;
   const gap = 18;
+  if (!closeLostReasonData.length) {
+    svg.innerHTML = `<text x="${width / 2}" y="${height / 2}" text-anchor="middle" font-size="14" fill="#6f5f78">No close-lost reasons in scope for the current filter window.</text>`;
+    return;
+  }
   const maxCount = Math.max(...closeLostReasonData.map((item) => item.count), 1);
 
   svg.innerHTML = `
@@ -448,6 +523,77 @@ function renderTable(data) {
           <td>${currency(item.icarr)}</td>
           <td>${integer(item.seats)}</td>
         </tr>
+      `
+    )
+    .join("");
+}
+
+function renderCloseLostNotes(data) {
+  const notesList = document.getElementById("closeLostNotesList");
+  if (!notesList) return;
+  const rows = data
+    .filter((item) => item.status === "close-lost")
+    .sort((a, b) => a.closeDate.localeCompare(b.closeDate));
+
+  if (!rows.length) {
+    notesList.innerHTML = `<div class="notes-empty">No close-lost renewal notes match the current filter window.</div>`;
+    return;
+  }
+
+  notesList.innerHTML = rows
+    .map(
+      (item) => `
+        <article class="note-card">
+          <div class="note-card-header">
+            <div>
+              <div class="note-card-title">${item.account}</div>
+              <div class="note-card-meta">${item.owner} · ${item.region} · ${formatDateLabel(item.closeDate)}</div>
+            </div>
+            <div class="note-card-stats">
+              <div>${currency(item.icarr)}</div>
+              <div>${integer(item.seats)} seats</div>
+            </div>
+          </div>
+          <div class="note-reason">${item.closeLostReason || "No reason provided"}</div>
+          <div class="note-copy">${item.closeLostNote || "No close-lost note was provided in the export."}</div>
+        </article>
+      `
+    )
+    .join("");
+}
+
+function renderCloseLostSnapshot(data) {
+  const snapshot = document.getElementById("closeLostSnapshot");
+  if (!snapshot) return;
+  const lostRows = data.filter((item) => item.status === "close-lost");
+  const totalRevenueLost = Math.abs(lostRows.reduce((sum, item) => sum + item.icarr, 0));
+  const totalSeatsLost = Math.abs(lostRows.reduce((sum, item) => sum + item.seats, 0));
+  const averageRevenueLost = lostRows.length ? Math.round(totalRevenueLost / lostRows.length) : 0;
+
+  snapshot.innerHTML = [
+    {
+      label: "Revenue Lost",
+      value: compactCurrency(totalRevenueLost),
+      subtext: `${currency(totalRevenueLost)} across close-lost renewals`
+    },
+    {
+      label: "Seats Lost",
+      value: integer(totalSeatsLost),
+      subtext: `${integer(totalSeatsLost)} seats removed from lost deals`
+    },
+    {
+      label: "Lost Renewals",
+      value: integer(lostRows.length),
+      subtext: lostRows.length ? `${currency(averageRevenueLost)} average revenue lost per deal` : "No close-lost renewals in scope"
+    }
+  ]
+    .map(
+      (kpi) => `
+        <article class="panel kpi-card is-negative">
+          <p class="eyebrow">${kpi.label}</p>
+          <div class="kpi-value">${kpi.value}</div>
+          <p class="kpi-subtext">${kpi.subtext}</p>
+        </article>
       `
     )
     .join("");
@@ -619,25 +765,44 @@ function renderWindowLabel(data) {
   const labelNode = document.getElementById("activeWindowLabel");
   if (!labelNode) return;
   const label = [];
-  if (filters.quarter !== "All") label.push(`${filters.quarter} QTD`);
+  if (filters.dateMode === "custom") {
+    const start = filters.startDate ? formatDateLabel(filters.startDate) : "Start";
+    const end = filters.endDate ? formatDateLabel(filters.endDate) : "End";
+    label.push(`${start} - ${end}`);
+  } else if (filters.quarter !== "All") {
+    label.push(`${filters.quarter} QTD`);
+  }
   if (filters.owner !== "All") label.push(filters.owner);
   if (filters.region !== "All") label.push(filters.region);
   if (filters.status !== "All") label.push(filters.status.replace("-", " "));
   labelNode.textContent = label.length ? label.join(" • ") : `QTD (${data.length})`;
 }
 
+function syncDateInputsState() {
+  const isCustom = filters.dateMode === "custom";
+  filterElements.startDate.disabled = !isCustom;
+  filterElements.endDate.disabled = !isCustom;
+}
+
 function render() {
+  const notesPage = Boolean(document.getElementById("closeLostNotesList"));
+  if (notesPage && filters.status === "All") {
+    filters.status = "close-lost";
+    filterElements.status.value = "close-lost";
+  }
   const filtered = applyFilters(opportunities);
   renderWindowLabel(filtered);
   renderKpis(filtered);
   renderRepLinks();
   renderTargetTracker(filtered);
-  renderTrendInsights();
+  renderTrendInsights(filtered);
   renderHighlights(filtered);
   renderTrendChart(filtered);
   renderOwnerChart(filtered);
   renderOutcomeChart(filtered);
   renderTable(filtered);
+  renderCloseLostSnapshot(filtered);
+  renderCloseLostNotes(filtered);
 }
 
 populateSelect(filterElements.quarter, unique("quarter"));
@@ -648,25 +813,43 @@ populateSelect(filterElements.status, unique("status"));
 Object.entries(filterElements).forEach(([key, element]) => {
   element.addEventListener("change", (event) => {
     filters[key] = event.target.value;
+    syncDateInputsState();
     render();
   });
 });
 
 document.getElementById("resetFilters").addEventListener("click", () => {
   filters.quarter = qtdQuarter;
+  filters.dateMode = "qtd";
+  filters.startDate = qtdStartDate;
+  filters.endDate = qtdEndDate;
   filters.owner = "All";
   filters.region = "All";
   filters.status = "All";
   filterElements.quarter.value = qtdQuarter;
+  filterElements.dateMode.value = "qtd";
+  filterElements.startDate.value = qtdStartDate;
+  filterElements.endDate.value = qtdEndDate;
   filterElements.owner.value = "All";
   filterElements.region.value = "All";
   filterElements.status.value = "All";
+  syncDateInputsState();
   render();
 });
 
+filters.startDate = qtdStartDate;
+filters.endDate = qtdEndDate;
 filterElements.quarter.value = filters.quarter;
+filterElements.dateMode.value = filters.dateMode;
+filterElements.startDate.value = filters.startDate;
+filterElements.endDate.value = filters.endDate;
+filterElements.startDate.min = qtdStartDate;
+filterElements.startDate.max = qtdEndDate;
+filterElements.endDate.min = qtdStartDate;
+filterElements.endDate.max = qtdEndDate;
 filterElements.owner.value = filters.owner;
 filterElements.region.value = filters.region;
 filterElements.status.value = filters.status;
 
+syncDateInputsState();
 render();

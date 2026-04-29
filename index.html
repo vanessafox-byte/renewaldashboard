@@ -34,6 +34,13 @@
 
           <div class="filter-grid">
             <label>
+              <span>Date Scope</span>
+              <select id="dateModeFilter">
+                <option value="qtd">QTD</option>
+                <option value="custom">Custom Range</option>
+              </select>
+            </label>
+            <label>
               <span>Quarter</span>
               <select id="quarterFilter"></select>
             </label>
@@ -49,10 +56,18 @@
               <span>Outcome</span>
               <select id="statusFilter"></select>
             </label>
+            <label>
+              <span>Start Date</span>
+              <input id="startDateFilter" type="date" />
+            </label>
+            <label>
+              <span>End Date</span>
+              <input id="endDateFilter" type="date" />
+            </label>
           </div>
 
           <div class="filter-note">
-            Data shown here is source-backed from the weekly renewals notes. Unattributed reductions stay under Unassigned rather than being mapped to a rep.
+            Use `QTD` for the full current quarter-to-date view, or switch to `Custom Range` to isolate any date window within the attached renewal export.
           </div>
         </section>
 
@@ -69,6 +84,7 @@
             <a class="page-link is-active" href="./index.html">Main Dashboard</a>
             <a class="page-link" href="./trends.html">Trend Analysis</a>
             <a class="page-link" href="./targets.html">Target Metrics</a>
+            <a class="page-link" href="./notes.html">Close-Lost Notes</a>
           </div>
         </section>
 
