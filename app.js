@@ -4,15 +4,15 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
 const renewalReps = ["Ebel", "Tyler", "Victor", "Nicolas", "Lakshay", "Ashana", "Lori", "Chantal", "Aditya"];
 const qtdQuarter = "Q2 2026";
 const targetData = {
-  Aditya: { incSeatTarget: 66, totalSeatTarget: 6661, icarrTarget: 30000, carrGuardrailTarget: 2600000, fullName: "Aditya Gera" },
-  Ashana: { incSeatTarget: 74, totalSeatTarget: 7494, icarrTarget: 32000, carrGuardrailTarget: 2700000, fullName: "Ashana Raybe" },
-  Chantal: { incSeatTarget: 93, totalSeatTarget: 9426, icarrTarget: 39000, carrGuardrailTarget: 3400000, fullName: "Chantal Przybysz" },
-  Ebel: { incSeatTarget: 99, totalSeatTarget: 9991, icarrTarget: 44000, carrGuardrailTarget: 3800000, fullName: "Ebel Floridia" },
-  Lakshay: { incSeatTarget: 90, totalSeatTarget: 9085, icarrTarget: 39000, carrGuardrailTarget: 3400000, fullName: "Lakshay Parashar" },
-  Lori: { incSeatTarget: 86, totalSeatTarget: 8683, icarrTarget: 37000, carrGuardrailTarget: 3300000, fullName: "Lori Greening" },
-  Nicolas: { incSeatTarget: 102, totalSeatTarget: 10308, icarrTarget: 45000, carrGuardrailTarget: 3800000, fullName: "Nicolas Fischer" },
-  Tyler: { incSeatTarget: 80, totalSeatTarget: 8030, icarrTarget: 32000, carrGuardrailTarget: 2800000, fullName: "Tyler Arnold" },
-  Victor: { incSeatTarget: 121, totalSeatTarget: 12266, icarrTarget: 48000, carrGuardrailTarget: 4100000, fullName: "Victor P Liberal" }
+  Aditya: { incSeatTarget: 66, totalSeatTarget: 6661, icarrTarget: 30000, fullName: "Aditya Gera" },
+  Ashana: { incSeatTarget: 74, totalSeatTarget: 7494, icarrTarget: 32000, fullName: "Ashana Raybe" },
+  Chantal: { incSeatTarget: 93, totalSeatTarget: 9426, icarrTarget: 39000, fullName: "Chantal Przybysz" },
+  Ebel: { incSeatTarget: 99, totalSeatTarget: 9991, icarrTarget: 44000, fullName: "Ebel Floridia" },
+  Lakshay: { incSeatTarget: 90, totalSeatTarget: 9085, icarrTarget: 39000, fullName: "Lakshay Parashar" },
+  Lori: { incSeatTarget: 86, totalSeatTarget: 8683, icarrTarget: 37000, fullName: "Lori Greening" },
+  Nicolas: { incSeatTarget: 102, totalSeatTarget: 10308, icarrTarget: 45000, fullName: "Nicolas Fischer" },
+  Tyler: { incSeatTarget: 80, totalSeatTarget: 8030, icarrTarget: 32000, fullName: "Tyler Arnold" },
+  Victor: { incSeatTarget: 121, totalSeatTarget: 12266, icarrTarget: 48000, fullName: "Victor P Liberal" }
 };
 const outcomeColors = {
   "close-won": "#0f766e",
@@ -223,28 +223,36 @@ function renderTargetTracker(data) {
     const ownerRows = data.filter((item) => item.owner === owner);
     return {
       owner,
+      totalSeatActual: ownerRows.reduce((sum, item) => sum + (item.currentSeats || 0), 0),
       seatActual: ownerRows.reduce((sum, item) => sum + item.seats, 0),
       icarrActual: ownerRows.reduce((sum, item) => sum + item.icarr, 0),
-      portfolioActual: ownerRows.reduce((sum, item) => sum + item.totalCarr, 0),
       ...targetData[owner]
     };
   });
 
   targetGrid.innerHTML = grouped
     .map((item) => {
+      const totalSeatProgress = Math.max(0, Math.min(100, (item.totalSeatActual / item.totalSeatTarget) * 100));
       const seatProgress = Math.max(0, Math.min(100, (item.seatActual / item.incSeatTarget) * 100));
       const icarrProgress = Math.max(0, Math.min(100, (item.icarrActual / item.icarrTarget) * 100));
-      const portfolioProgress = Math.max(0, Math.min(100, (item.portfolioActual / item.carrGuardrailTarget) * 100));
       return `
         <div class="target-card">
           <div class="target-card-header">
             <div>
               <div class="target-card-name">${item.fullName}</div>
-              <div class="target-card-summary">Actuals: ${integer(item.seatActual)} inc seats · ${currency(item.icarrActual)} iCARR · ${compactCurrency(item.portfolioActual)} renewed CARR</div>
+              <div class="target-card-summary">Actuals: ${integer(item.totalSeatActual)} total seats · ${integer(item.seatActual)} iSeats · ${currency(item.icarrActual)} iCARR</div>
             </div>
-            <div class="target-card-meta">Seat book target ${integer(item.totalSeatTarget)}</div>
+            <div class="target-card-meta">Targets from latest rep plan</div>
           </div>
           <div class="target-metrics">
+            <div class="target-row">
+              <div class="target-row-top">
+                <span class="target-label">Total Seat Target</span>
+                <span class="target-value">${integer(item.totalSeatActual)} / ${integer(item.totalSeatTarget)}</span>
+              </div>
+              <div class="target-bar"><div class="target-bar-fill" style="width:${totalSeatProgress}%"></div></div>
+              <div class="target-gap">${formatGap(item.totalSeatActual, item.totalSeatTarget, integer)}</div>
+            </div>
             <div class="target-row">
               <div class="target-row-top">
                 <span class="target-label">Inc Seats Goal</span>
@@ -260,14 +268,6 @@ function renderTargetTracker(data) {
               </div>
               <div class="target-bar"><div class="target-bar-fill" style="width:${icarrProgress}%"></div></div>
               <div class="target-gap">${formatGap(item.icarrActual, item.icarrTarget, currency)}</div>
-            </div>
-            <div class="target-row">
-              <div class="target-row-top">
-                <span class="target-label">CARR Guardrail</span>
-                <span class="target-value">${compactCurrency(item.portfolioActual)} / ${compactCurrency(item.carrGuardrailTarget)}</span>
-              </div>
-              <div class="target-bar"><div class="target-bar-fill" style="width:${portfolioProgress}%"></div></div>
-              <div class="target-gap">${formatGap(item.portfolioActual, item.carrGuardrailTarget, compactCurrency)}</div>
             </div>
           </div>
         </div>

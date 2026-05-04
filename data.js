@@ -14,7 +14,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -17160.0,
     "seats": 59,
-    "totalCarr": 36360.0
+    "totalCarr": 36360.0,
+    "currentSeats": 160
   },
   {
     "account": "Renewal [2026] - Columbia Road-",
@@ -33,7 +34,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -33600.0,
     "seats": -70,
-    "totalCarr": 33600.0
+    "totalCarr": 33600.0,
+    "currentSeats": 1
   },
   {
     "account": "Renewal [2026] - Culture AI-",
@@ -52,7 +54,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -19200.0,
     "seats": -40,
-    "totalCarr": 19200.0
+    "totalCarr": 19200.0,
+    "currentSeats": 1
   },
   {
     "account": "Renewal [2026] - GHA Technologies-Velocity Land",
@@ -71,7 +74,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -17760.0,
     "seats": -37,
-    "totalCarr": 89760.0
+    "totalCarr": 89760.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - GIZEH Raucherbedarf GmbH",
@@ -88,7 +92,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 4800.0,
     "seats": 10,
-    "totalCarr": 62880.0
+    "totalCarr": 62880.0,
+    "currentSeats": 141
   },
   {
     "account": "Renewal [2026] - Herse Information Co. Ltd - ChatGPT Enterprise",
@@ -105,7 +110,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 51840.0,
     "seats": 108,
-    "totalCarr": 172800.0
+    "totalCarr": 172800.0,
+    "currentSeats": 360
   },
   {
     "account": "Renewal [2026] - Income Research + Management-ChatGPT Enterprise",
@@ -122,7 +128,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 39840.0
+    "totalCarr": 39840.0,
+    "currentSeats": 83
   },
   {
     "account": "Renewal [2026] - Lyles Services Co.-",
@@ -142,7 +149,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -13920.0,
     "seats": -29,
-    "totalCarr": 61920.0
+    "totalCarr": 61920.0,
+    "currentSeats": 100
   },
   {
     "account": "Renewal [2026] - Playground Tech-",
@@ -159,7 +167,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -38880.0,
     "seats": -81,
-    "totalCarr": 38880.0
+    "totalCarr": 38880.0,
+    "currentSeats": 1
   },
   {
     "account": "Renewal [2026] - Quantum Rise, Inc.-ChatGPT Enterprise",
@@ -176,7 +185,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 5280.0,
     "seats": 11,
-    "totalCarr": 17280.0
+    "totalCarr": 17280.0,
+    "currentSeats": 36
   },
   {
     "account": "Renewal [2026] - Stonepeak Partners",
@@ -193,7 +203,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -720.0,
     "seats": 11,
-    "totalCarr": 114000.0
+    "totalCarr": 114000.0,
+    "currentSeats": 250
   },
   {
     "account": "Renewal [2026] - Waterfall Asset Management - ChatGPT Enterprise",
@@ -210,7 +221,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Zelestra-",
@@ -227,7 +239,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 75000.0,
     "seats": 200,
-    "totalCarr": 147000.0
+    "totalCarr": 147000.0,
+    "currentSeats": 350
   },
   {
     "account": "Renewal [2026] - Atomico- ChatGPT Enterprise",
@@ -246,7 +259,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -16800.0,
     "seats": -35,
-    "totalCarr": 28800.0
+    "totalCarr": 28800.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Brighter Super-ChatGPT Enterprise",
@@ -263,7 +277,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 4320.0,
     "seats": 9,
-    "totalCarr": 14880.0
+    "totalCarr": 14880.0,
+    "currentSeats": 40
   },
   {
     "account": "Renewal [2026] - Integra Capital - Renewal",
@@ -280,7 +295,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3840.0,
     "seats": 8,
-    "totalCarr": 84000.0
+    "totalCarr": 84000.0,
+    "currentSeats": 183
   },
   {
     "account": "Renewal [2026] - IDEAYA Biosciences - Renewal",
@@ -297,7 +313,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 38400.0,
     "seats": 80,
-    "totalCarr": 105600.0
+    "totalCarr": 105600.0,
+    "currentSeats": 300
   },
   {
     "account": "Renewal [2026] - BDT & MSD - ChatGPT Enterprise",
@@ -317,7 +334,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -29400.0,
     "seats": -50,
-    "totalCarr": 240000.0
+    "totalCarr": 240000.0,
+    "currentSeats": 450
   },
   {
     "account": "Renewal [2026] - CLV Group - ChatGPT Enterprise",
@@ -334,7 +352,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 480.0,
     "seats": 1,
-    "totalCarr": 19200.0
+    "totalCarr": 19200.0,
+    "currentSeats": 41
   },
   {
     "account": "Renewal [2026] - HCI Equity Partners-",
@@ -354,7 +373,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Purewest Resources Inc-ChatGPT Enterprise",
@@ -373,7 +393,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -9600.0,
     "seats": -20,
-    "totalCarr": 91200.0
+    "totalCarr": 91200.0,
+    "currentSeats": 170
   },
   {
     "account": "Renewal [2026] - Alto Solutions Inc-ChatGPT Enterprise",
@@ -390,7 +411,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -26760.0,
     "seats": -55,
-    "totalCarr": 40800.0
+    "totalCarr": 40800.0,
+    "currentSeats": 30
   },
   {
     "account": "Renewal [2026] - AppOmni Inc - ChatGPT Enterprise",
@@ -410,7 +432,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -36000.0,
     "seats": -75,
-    "totalCarr": 84000.0
+    "totalCarr": 84000.0,
+    "currentSeats": 100
   },
   {
     "account": "Renewal [2026] - InterRent-New Business",
@@ -429,7 +452,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -1920.0,
     "seats": -4,
-    "totalCarr": 53280.0
+    "totalCarr": 53280.0,
+    "currentSeats": 111
   },
   {
     "account": "Renewal [2026] - Javits-ChatGPT Enterprise",
@@ -446,7 +470,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3840.0,
     "seats": 8,
-    "totalCarr": 15360.0
+    "totalCarr": 15360.0,
+    "currentSeats": 40
   },
   {
     "account": "Renewal [2026] - Lysa AB-",
@@ -463,7 +488,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 8160.0,
     "seats": 17,
-    "totalCarr": 34560.0
+    "totalCarr": 34560.0,
+    "currentSeats": 89
   },
   {
     "account": "Renewal [2026] - Redwood Trust Inc.-ChatGPT Enterprise",
@@ -480,7 +506,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 15660.0,
     "seats": 29,
-    "totalCarr": 132840.0
+    "totalCarr": 132840.0,
+    "currentSeats": 275
   },
   {
     "account": "Renewal [2026] - The Extreme Light Infrastructure ERIC-",
@@ -497,7 +524,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -37320.0,
     "seats": 46,
-    "totalCarr": 66720.0
+    "totalCarr": 66720.0,
+    "currentSeats": 165
   },
   {
     "account": "Renewal [2026] - Admiral Pioneer - ChatGPT Enterprise",
@@ -514,7 +542,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 12000.0,
     "seats": 25,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 175
   },
   {
     "account": "Renewal [2026] - Shenkman Capital Management Inc.-ChatGPT Enterprise",
@@ -531,7 +560,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 4320.0,
     "seats": 12,
-    "totalCarr": 51840.0
+    "totalCarr": 51840.0,
+    "currentSeats": 120
   },
   {
     "account": "Renewal [2026] - TBK Automatisierung und Messtechnik GmbH-",
@@ -548,7 +578,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3780.0,
     "seats": 0,
-    "totalCarr": 17820.0
+    "totalCarr": 17820.0,
+    "currentSeats": 45
   },
   {
     "account": "Renewal [2026] - ISI Enterprises - ChatGPT Enterprise",
@@ -567,7 +598,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -36960.0,
     "seats": -77,
-    "totalCarr": 72960.0
+    "totalCarr": 72960.0,
+    "currentSeats": 75
   },
   {
     "account": "Renewal [2026] - National Rural Utilities Cooperative Finance Corporation-ChatGPT Enterprise",
@@ -584,7 +616,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2400.0,
     "seats": 5,
-    "totalCarr": 22080.0
+    "totalCarr": 22080.0,
+    "currentSeats": 51
   },
   {
     "account": "Renewal [2026] - CU Direct Corporation-ChatGPT Enterprise",
@@ -601,7 +634,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 10560.0,
     "seats": 22,
-    "totalCarr": 22560.0
+    "totalCarr": 22560.0,
+    "currentSeats": 47
   },
   {
     "account": "Renewal [2026] - CareDx Inc. // ChatGPT Enterprise",
@@ -618,7 +652,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3840.0,
     "seats": 8,
-    "totalCarr": 46080.0
+    "totalCarr": 46080.0,
+    "currentSeats": 96
   },
   {
     "account": "Renewal [2026] - First Eagle Investments - ChatGPT Enterprise",
@@ -635,7 +670,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 19200.0,
     "seats": 40,
-    "totalCarr": 120000.0
+    "totalCarr": 120000.0,
+    "currentSeats": 290
   },
   {
     "account": "Renewal [2026] - Jones & Wagener - ChatGPT Enterprise",
@@ -652,7 +688,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 7200.0,
     "seats": 15,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 165
   },
   {
     "account": "Renewal [2026] - Vane Brothers (ChatGPT 25)-",
@@ -669,7 +706,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Cydcor, LLC-ChatGPT Enterprise",
@@ -686,7 +724,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 5760.0,
     "seats": 12,
-    "totalCarr": 73440.0
+    "totalCarr": 73440.0,
+    "currentSeats": 165
   },
   {
     "account": "Renewal [2026] - Great Elm Group, Inc.-ChatGPT Enterprise",
@@ -703,7 +742,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Leave a Nest - ChatGPT 150 seats",
@@ -720,7 +760,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - Liontrust Asset Management-ChatGPT Enterprise",
@@ -737,7 +778,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2400.0,
     "seats": 5,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 55
   },
   {
     "account": "Renewal [2026] - Monobank - ChatGPT Enterprise",
@@ -757,7 +799,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -62400.0,
     "seats": -130,
-    "totalCarr": 144000.0
+    "totalCarr": 144000.0,
+    "currentSeats": 300
   },
   {
     "account": "Renewal [2026] - iSeatz - Renewal",
@@ -776,7 +819,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -14400.0,
     "seats": -30,
-    "totalCarr": 57600.0
+    "totalCarr": 57600.0,
+    "currentSeats": 120
   },
   {
     "account": "Renewal [2026] - BioWound Solutions-ChatGPT Enterprise",
@@ -793,7 +837,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 7200.0,
     "seats": 15,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 40
   },
   {
     "account": "Renewal [2026] - Kirton McConkie-ChatGPT Enterprise",
@@ -810,7 +855,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 24000.0,
     "seats": 50,
-    "totalCarr": 88800.0
+    "totalCarr": 88800.0,
+    "currentSeats": 235
   },
   {
     "account": "Renewal [2026] - LRN- ChatGPT Enterprise",
@@ -827,7 +873,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 96000.0
+    "totalCarr": 96000.0,
+    "currentSeats": 200
   },
   {
     "account": "Renewal [2026] - Lucid Group Communications - ChatGPT Enterprise (CBP)",
@@ -846,7 +893,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": 23760.0,
     "seats": -60,
-    "totalCarr": 172800.0
+    "totalCarr": 172800.0,
+    "currentSeats": 420
   },
   {
     "account": "Renewal [2026] - Prospect Administration - ChatGPT Enterprise - Land 100",
@@ -863,7 +911,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 1068.0,
     "seats": 5,
-    "totalCarr": 51948.0
+    "totalCarr": 51948.0,
+    "currentSeats": 111
   },
   {
     "account": "Renewal [2026] - echion Corporate Communication AG-",
@@ -880,7 +929,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Apax Partners - ChatGPT Enterprise",
@@ -897,7 +947,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2400.0,
     "seats": 5,
-    "totalCarr": 155520.0
+    "totalCarr": 155520.0,
+    "currentSeats": 329
   },
   {
     "account": "Renewal [2026] - Day One Biopharmaceuticals-",
@@ -914,7 +965,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 5280.0,
     "seats": 11,
-    "totalCarr": 78240.0
+    "totalCarr": 78240.0,
+    "currentSeats": 163
   },
   {
     "account": "Renewal [2026] - EUC - Chat",
@@ -935,7 +987,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -13740.0,
     "seats": -57,
-    "totalCarr": 45340.0
+    "totalCarr": 45340.0,
+    "currentSeats": 170
   },
   {
     "account": "Renewal [2026] - First Round - ChatGPT Enterprise",
@@ -952,7 +1005,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 480.0,
     "seats": 1,
-    "totalCarr": 27360.0
+    "totalCarr": 27360.0,
+    "currentSeats": 58
   },
   {
     "account": "Renewal [2026] - Heaven Hill Brands- chatgpt 400 CBP",
@@ -969,7 +1023,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 52140.0,
     "seats": 25,
-    "totalCarr": 333120.0
+    "totalCarr": 333120.0,
+    "currentSeats": 694
   },
   {
     "account": "Renewal [2026] - OddBytes Inc. - ChatGPT Enterprise",
@@ -986,7 +1041,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 960.0,
     "seats": 2,
-    "totalCarr": 66240.0
+    "totalCarr": 66240.0,
+    "currentSeats": 140
   },
   {
     "account": "Renewal [2026] - Polar Capital Partners Ltd - ChatGPT Enterprise",
@@ -1003,7 +1059,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 8160.0,
     "seats": 17,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 167
   },
   {
     "account": "Renewal [2026] - Davidson Technology Consulting-NB-Cbiz-100",
@@ -1020,7 +1077,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 48000.0
+    "totalCarr": 48000.0,
+    "currentSeats": 100
   },
   {
     "account": "Renewal [2026] - Liberty Tax Services - ChatGPT Enterprise",
@@ -1039,7 +1097,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -4320.0,
     "seats": -9,
-    "totalCarr": 41760.0
+    "totalCarr": 41760.0,
+    "currentSeats": 78
   },
   {
     "account": "Renewal [2026] - Prophix - ChatGPT Enterprise",
@@ -1058,7 +1117,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -104160.0,
     "seats": -217,
-    "totalCarr": 152160.0
+    "totalCarr": 152160.0,
+    "currentSeats": 100
   },
   {
     "account": "Renewal [2026] - VeriSign - ChatGPT Enterprise",
@@ -1075,7 +1135,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - Ward Law Group, PL-",
@@ -1092,7 +1153,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 13500.0,
     "seats": 55,
-    "totalCarr": 76800.0
+    "totalCarr": 76800.0,
+    "currentSeats": 215
   },
   {
     "account": "Renewal [2026] - AlloSource-ChatGPT Enterprise",
@@ -1109,7 +1171,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -30480.0,
     "seats": 2,
-    "totalCarr": 46080.0
+    "totalCarr": 46080.0,
+    "currentSeats": 130
   },
   {
     "account": "Renewal [2026] - Exostar-ChatGPT Enterprise",
@@ -1128,7 +1191,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -50880.0,
     "seats": -106,
-    "totalCarr": 36000.0
+    "totalCarr": 36000.0,
+    "currentSeats": 75
   },
   {
     "account": "Renewal [2026] - Pensjonskassen for helseforetakene i hovedstadsomr\u00e5det (PKH)-",
@@ -1145,7 +1209,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 10296.0
+    "totalCarr": 10296.0,
+    "currentSeats": 26
   },
   {
     "account": "Renewal [2026] - Allen & Company-",
@@ -1162,7 +1227,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3840.0,
     "seats": 8,
-    "totalCarr": 44160.0
+    "totalCarr": 44160.0,
+    "currentSeats": 92
   },
   {
     "account": "Renewal [2026] - Ampsight, Inc. (ChatGPT 40)-",
@@ -1181,7 +1247,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -24480.0,
     "seats": -51,
-    "totalCarr": 24480.0
+    "totalCarr": 24480.0,
+    "currentSeats": 51
   },
   {
     "account": "Renewal [2026] - Best in Parking AG-",
@@ -1198,7 +1265,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -4200.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - ECE Real Estate Partners GmbH-",
@@ -1215,7 +1283,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - GS1 US-ChatGPT Enterprise",
@@ -1232,7 +1301,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - GiveDirectly-",
@@ -1249,7 +1319,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -38400.0,
     "seats": 12,
-    "totalCarr": 21360.0
+    "totalCarr": 21360.0,
+    "currentSeats": 178
   },
   {
     "account": "Renewal [2026] - Merchant Capital LLC-ChatGPT Enterprise",
@@ -1269,7 +1340,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Odyssey Investment Partners-ChatGPT Enterprise",
@@ -1286,7 +1358,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - AAA Life - ChatGPT Enterprise",
@@ -1303,7 +1376,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 24000.0,
     "seats": 50,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 200
   },
   {
     "account": "Renewal [2026] - Bernhard Capital Partners-ChatGPT Ent",
@@ -1324,7 +1398,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - DFJ Growth Management LLC-ChatGPT Enterprise",
@@ -1341,7 +1416,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Emerson Collective, LLC - ChatGPT Enterprise",
@@ -1358,7 +1434,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -50160.0,
     "seats": 0,
-    "totalCarr": 75240.0
+    "totalCarr": 75240.0,
+    "currentSeats": 209
   },
   {
     "account": "Renewal [2026] - Ilex Capital-",
@@ -1375,7 +1452,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2400.0,
     "seats": 5,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 30
   },
   {
     "account": "Renewal [2026] - John D. and Catherine T. MacArthur Foundation-ChatGPT Enterprise",
@@ -1392,7 +1470,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -34920.0,
     "seats": 23,
-    "totalCarr": 56520.0
+    "totalCarr": 56520.0,
+    "currentSeats": 180
   },
   {
     "account": "Renewal [2026] - Piping Rock Health Products, Inc",
@@ -1411,7 +1490,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -6720.0,
     "seats": -14,
-    "totalCarr": 168000.0
+    "totalCarr": 168000.0,
+    "currentSeats": 350
   },
   {
     "account": "Renewal [2026] - interos.ai-",
@@ -1430,7 +1510,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -11520.0,
     "seats": -24,
-    "totalCarr": 40320.0
+    "totalCarr": 40320.0,
+    "currentSeats": 60
   },
   {
     "account": "Renewal [2026] - Bezos Earth Fund - ChatGPT Enterprise (NPF)",
@@ -1447,7 +1528,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -10800.0,
     "seats": 10,
-    "totalCarr": 7200.0
+    "totalCarr": 7200.0,
+    "currentSeats": 60
   },
   {
     "account": "Renewal [2026] - FCP- ChatGPT Enterprise",
@@ -1464,7 +1546,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -12480.0,
     "seats": -26,
-    "totalCarr": 12480.0
+    "totalCarr": 12480.0,
+    "currentSeats": 26
   },
   {
     "account": "Renewal [2026] - Mutuelle Pr\u00e9vifrance-",
@@ -1481,7 +1564,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 9900.0
+    "totalCarr": 9900.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Pacvue - ChatGPT Enterprise",
@@ -1501,7 +1585,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -178440.0,
     "seats": -529,
-    "totalCarr": 226440.0
+    "totalCarr": 226440.0,
+    "currentSeats": 100
   },
   {
     "account": "Renewal [2026] - ?????? (IGPI) - Renewal",
@@ -1518,7 +1603,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 85920.0
+    "totalCarr": 85920.0,
+    "currentSeats": 179
   },
   {
     "account": "Renewal [2026] - Charles Pankow Builders, LTD- ChatGPT Enterprise Land",
@@ -1537,7 +1623,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -41760.0,
     "seats": -87,
-    "totalCarr": 41760.0
+    "totalCarr": 41760.0,
+    "currentSeats": 87
   },
   {
     "account": "Renewal [2026] - LOVOO- ChatGPT Enterprise",
@@ -1556,7 +1643,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -26400.0,
     "seats": -55,
-    "totalCarr": 127200.0
+    "totalCarr": 127200.0,
+    "currentSeats": 210
   },
   {
     "account": "Renewal [2026] - Landratsamt Regensburg-",
@@ -1573,7 +1661,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -2400.0,
     "seats": 16,
-    "totalCarr": 49920.0
+    "totalCarr": 49920.0,
+    "currentSeats": 120
   },
   {
     "account": "Renewal [2026] - Lansigt-Chat",
@@ -1590,7 +1679,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 4800.0,
     "seats": 10,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 35
   },
   {
     "account": "Renewal [2026] - Pearl Meyer - ChatGPT Enterprise",
@@ -1607,7 +1697,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 1440.0,
     "seats": 3,
-    "totalCarr": 70560.0
+    "totalCarr": 70560.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - PubNub Inc.- ChatGPT Enterprise SMB",
@@ -1627,7 +1718,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -4320.0,
     "seats": -9,
-    "totalCarr": 36960.0
+    "totalCarr": 36960.0,
+    "currentSeats": 68
   },
   {
     "account": "Renewal [2026] - Auger Inc.-",
@@ -1644,7 +1736,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 396.0,
     "seats": 1,
-    "totalCarr": 59004.0
+    "totalCarr": 59004.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - Discovery Education, Inc-",
@@ -1663,7 +1756,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -2496.0,
     "seats": -8,
-    "totalCarr": 15600.0
+    "totalCarr": 15600.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Northshore- ChatGPT Enterprise",
@@ -1682,7 +1776,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -4320.0,
     "seats": -9,
-    "totalCarr": 18240.0
+    "totalCarr": 18240.0,
+    "currentSeats": 38
   },
   {
     "account": "Renewal [2026] - PennantPark Investment Advisers, LLC-",
@@ -1701,7 +1796,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -13440.0,
     "seats": -28,
-    "totalCarr": 32160.0
+    "totalCarr": 32160.0,
+    "currentSeats": 39
   },
   {
     "account": "Renewal [2026] - The Bazooka Companies, LLC-",
@@ -1720,7 +1816,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -21600.0,
     "seats": -45,
-    "totalCarr": 33600.0
+    "totalCarr": 33600.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Fractyl - OpenAI",
@@ -1739,7 +1836,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -17760.0,
     "seats": -37,
-    "totalCarr": 41760.0
+    "totalCarr": 41760.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Insurify, Inc-",
@@ -1756,7 +1854,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 26400.0,
     "seats": 55,
-    "totalCarr": 93600.0
+    "totalCarr": 93600.0,
+    "currentSeats": 250
   },
   {
     "account": "Renewal [2026] - Kwest Group - ChatGPT Enterprise",
@@ -1773,7 +1872,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3360.0,
     "seats": 7,
-    "totalCarr": 39840.0
+    "totalCarr": 39840.0,
+    "currentSeats": 90
   },
   {
     "account": "Renewal [2026] - Oats Overnight, Inc.-ChatGPT Enterprise",
@@ -1792,7 +1892,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -75360.0,
     "seats": -157,
-    "totalCarr": 75360.0
+    "totalCarr": 75360.0,
+    "currentSeats": 157
   },
   {
     "account": "Renewal [2026] - Rubicon Founders-ChatGPT Enterprise",
@@ -1811,7 +1912,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -1920.0,
     "seats": -4,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - ScaleOps Labs Ltd.- Velocity Land",
@@ -1828,7 +1930,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2472.0,
     "seats": 8,
-    "totalCarr": 50880.0
+    "totalCarr": 50880.0,
+    "currentSeats": 114
   },
   {
     "account": "Renewal (2026) - Arquimea Group",
@@ -1845,7 +1948,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 130560.0,
     "seats": 29,
-    "totalCarr": 164640.0
+    "totalCarr": 164640.0,
+    "currentSeats": 372
   },
   {
     "account": "Renewal [2026] - Beveridge & Diamond - ChatGPT Enterprise",
@@ -1862,7 +1966,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 14400.0,
     "seats": 30,
-    "totalCarr": 96000.0
+    "totalCarr": 96000.0,
+    "currentSeats": 230
   },
   {
     "account": "Renewal [2026] - Cincinnati Zoo-NPF Chat Land",
@@ -1879,7 +1984,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -12000.0,
     "seats": 0,
-    "totalCarr": 18000.0
+    "totalCarr": 18000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Korea Investment Corporation - Chatgpt 150 license",
@@ -1896,7 +2002,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 17760.0,
     "seats": 37,
-    "totalCarr": 126240.0
+    "totalCarr": 126240.0,
+    "currentSeats": 300
   },
   {
     "account": "Renewal [2026] - Ninedot Holdings, Inc. - Renewal",
@@ -1913,7 +2020,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 1344.0,
     "seats": 4,
-    "totalCarr": 26880.0
+    "totalCarr": 26880.0,
+    "currentSeats": 84
   },
   {
     "account": "Renewal [2026] - Once Upon a Farm-",
@@ -1933,7 +2041,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -2400.0,
     "seats": -5,
-    "totalCarr": 33600.0
+    "totalCarr": 33600.0,
+    "currentSeats": 65
   },
   {
     "account": "Renewal [2026] - Stoneage Tools- ChatGPT Enterprise",
@@ -1950,7 +2059,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2400.0,
     "seats": 5,
-    "totalCarr": 49920.0
+    "totalCarr": 49920.0,
+    "currentSeats": 104
   },
   {
     "account": "Renewal [2026] - Van Eck - Early Renewal",
@@ -1969,7 +2079,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -159960.0,
     "seats": -524,
-    "totalCarr": 255960.0
+    "totalCarr": 255960.0,
+    "currentSeats": 200
   },
   {
     "account": "Trexquant - API + ChatGPT - Renewal (2026)",
@@ -1986,7 +2097,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 8160.0,
     "seats": 17,
-    "totalCarr": 137840.0
+    "totalCarr": 137840.0,
+    "currentSeats": 200
   },
   {
     "account": "Renewal [2026] - BCS Automation Ltd.-ChatGPT Enterprise",
@@ -2003,7 +2115,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 2880.0,
     "seats": 6,
-    "totalCarr": 12480.0
+    "totalCarr": 12480.0,
+    "currentSeats": 32
   },
   {
     "account": "Renewal [2026] - ChatGPT Enterprise Colossal Biosciences seats",
@@ -2020,7 +2133,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 31680.0
+    "totalCarr": 31680.0,
+    "currentSeats": 66
   },
   {
     "account": "Renewal [2026] - Credigy - CBP 185 Seats",
@@ -2039,7 +2153,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -67620.0,
     "seats": -161,
-    "totalCarr": 149940.0
+    "totalCarr": 149940.0,
+    "currentSeats": 196
   },
   {
     "account": "Renewal [2026] - Knight Foundation - ChatGPT Enterprise (NPF)",
@@ -2056,7 +2171,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -18840.0,
     "seats": -9,
-    "totalCarr": 7800.0
+    "totalCarr": 7800.0,
+    "currentSeats": 65
   },
   {
     "account": "Renewal [2026] - Media Res Studio-",
@@ -2075,7 +2191,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -18720.0,
     "seats": -39,
-    "totalCarr": 18720.0
+    "totalCarr": 18720.0,
+    "currentSeats": 39
   },
   {
     "account": "Renewal [2026] - Prime Group Holding - ChatGPT Enterprise",
@@ -2092,7 +2209,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Upland Capital Group-ChatGPT Velocity Land",
@@ -2109,7 +2227,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 8640.0,
     "seats": 18,
-    "totalCarr": 36000.0
+    "totalCarr": 36000.0,
+    "currentSeats": 75
   },
   {
     "account": "Renewal [2026] - Basys - ChatGPT Enterprise",
@@ -2129,7 +2248,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -72000.0,
     "seats": -150,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - NANOREALITY GAMES S.L.-",
@@ -2146,7 +2266,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Pinnacle Exhibits-",
@@ -2163,7 +2284,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 50
   },
   {
     "account": "Renewal [2026] - Raya - Chat",
@@ -2182,7 +2304,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 40800.0
+    "totalCarr": 40800.0,
+    "currentSeats": 85
   },
   {
     "account": "Renewal [2026] - Suveto-ChatGPT Enterprise",
@@ -2201,7 +2324,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -7200.0,
     "seats": -15,
-    "totalCarr": 16800.0
+    "totalCarr": 16800.0,
+    "currentSeats": 35
   },
   {
     "account": "Renewal [2026] - Warner Norcross + Judd - ChatGPT Enterprise",
@@ -2218,7 +2342,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - Young Basile - ChatGPT Enterprise",
@@ -2238,7 +2363,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -15840.0,
     "seats": -33,
-    "totalCarr": 15840.0
+    "totalCarr": 15840.0,
+    "currentSeats": 33
   },
   {
     "account": "Renewal [2026] - broadhead - Renewal",
@@ -2255,7 +2381,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 150
   },
   {
     "account": "Renewal [2026] - Adapt Forward, LLC-ChatGPT Enterprise",
@@ -2276,7 +2403,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -16800.0,
     "seats": -35,
-    "totalCarr": 16800.0
+    "totalCarr": 16800.0,
+    "currentSeats": 35
   },
   {
     "account": "Renewal [2026] - Beach Camera - ChatGPT Enterprise",
@@ -2295,7 +2423,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -23520.0,
     "seats": -49,
-    "totalCarr": 23520.0
+    "totalCarr": 23520.0,
+    "currentSeats": 49
   },
   {
     "account": "Renewal [2026] - Cabot Properties, Inc.-",
@@ -2312,7 +2441,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 3960.0,
     "seats": 10,
-    "totalCarr": 49500.0
+    "totalCarr": 49500.0,
+    "currentSeats": 135
   },
   {
     "account": "Renewal [2026] - Falfurrias Management Partners, LP-ChatGPT Enterprise",
@@ -2331,7 +2461,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -23040.0,
     "seats": -48,
-    "totalCarr": 23040.0
+    "totalCarr": 23040.0,
+    "currentSeats": 48
   },
   {
     "account": "Renewal [2026] - Fasanara Capital- ChatGPT Enterprise",
@@ -2348,7 +2479,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 29040.0,
     "seats": 80,
-    "totalCarr": 24000.0
+    "totalCarr": 24000.0,
+    "currentSeats": 130
   },
   {
     "account": "Renewal [2026] - Lumina Foundation for Education, Inc. - ChatGPT Enterprise",
@@ -2365,7 +2497,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -13200.0,
     "seats": 0,
-    "totalCarr": 19800.0
+    "totalCarr": 19800.0,
+    "currentSeats": 55
   },
   {
     "account": "Renewal [2026] - PLS Logistics - Renewal",
@@ -2386,7 +2519,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -27120.0,
     "seats": -40,
-    "totalCarr": 72000.0
+    "totalCarr": 72000.0,
+    "currentSeats": 110
   },
   {
     "account": "Renewal [2026] - RKE x Phenix Paving & Maintenance-ChatGPT 40 Seat Land",
@@ -2406,7 +2540,8 @@ window.RENEWALS_DATA = [
     ],
     "icarr": -12000.0,
     "seats": -25,
-    "totalCarr": 12000.0
+    "totalCarr": 12000.0,
+    "currentSeats": 25
   },
   {
     "account": "Renewal [2026] - Renewal [May 2025] - Midland States Bank",
@@ -2423,7 +2558,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 6540.0,
     "seats": 52,
-    "totalCarr": 128940.0
+    "totalCarr": 128940.0,
+    "currentSeats": 307
   },
   {
     "account": "Renewal [2026] - SROA Capital",
@@ -2440,7 +2576,8 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": 0.0,
     "seats": 0,
-    "totalCarr": 45600.0
+    "totalCarr": 45600.0,
+    "currentSeats": 95
   },
   {
     "account": "Renewal [2026] - Visiting Media LLC - ChatGPT Enterprise",
@@ -2457,6 +2594,7 @@ window.RENEWALS_DATA = [
     "trendTags": [],
     "icarr": -15840.0,
     "seats": -33,
-    "totalCarr": 45600.0
+    "totalCarr": 45600.0,
+    "currentSeats": 95
   }
 ];
