@@ -221,12 +221,13 @@ function renderTargetTracker(data) {
   if (!targetGrid) return;
   const grouped = renewalReps.map((owner) => {
     const ownerRows = data.filter((item) => item.owner === owner);
-    const wonRows = ownerRows.filter((item) => item.status === "close-won");
     return {
       owner,
-      totalSeatActual: wonRows.reduce((sum, item) => sum + (item.currentSeats || 0), 0),
-      seatActual: wonRows.reduce((sum, item) => sum + item.seats, 0),
-      icarrActual: wonRows.reduce((sum, item) => sum + item.icarr, 0),
+      totalSeatActual: ownerRows
+        .filter((item) => item.status === "close-won")
+        .reduce((sum, item) => sum + (item.currentSeats || 0), 0),
+      seatActual: ownerRows.reduce((sum, item) => sum + item.seats, 0),
+      icarrActual: ownerRows.reduce((sum, item) => sum + item.icarr, 0),
       ...targetData[owner]
     };
   });
