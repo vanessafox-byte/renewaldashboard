@@ -152,6 +152,8 @@ function buildCloseLostSeatTrendData(data) {
 function buildKpis(data) {
   const wonDeals = data.filter((item) => item.status === "close-won");
   const lostDeals = data.filter((item) => item.status === "close-lost");
+  const nonprofitRows = data.filter((item) => item.isNonProfit);
+  const nonprofitIcarr = nonprofitRows.reduce((sum, item) => sum + item.icarr, 0);
   const addedIcarr = data.filter((item) => item.icarr > 0).reduce((sum, item) => sum + item.icarr, 0);
   const reducedIcarr = Math.abs(data.filter((item) => item.icarr < 0).reduce((sum, item) => sum + item.icarr, 0));
   const netIcarr = data.reduce((sum, item) => sum + item.icarr, 0);
@@ -166,6 +168,8 @@ function buildKpis(data) {
     { label: "Net iCARR", value: compactCurrency(netIcarr), subtext: `${currency(netIcarr)} across all QTD renewals`, negative: netIcarr < 0 },
     { label: "iSeats Added", value: integer(addedSeats), subtext: `${integer(addedSeats)} positive incremental seats`, negative: false },
     { label: "Seat Reduction", value: integer(reducedSeats), subtext: `${integer(reducedSeats)} seats reduced or lost`, negative: true },
+    { label: "Nonprofit Renewals", value: integer(nonprofitRows.length), subtext: `${integer(nonprofitRows.filter((item) => item.status === "close-won").length)} close-won and ${integer(nonprofitRows.filter((item) => item.status === "close-lost").length)} close-lost`, negative: false },
+    { label: "Nonprofit iCARR", value: compactCurrency(nonprofitIcarr), subtext: `${currency(nonprofitIcarr)} across nonprofit renewals`, negative: nonprofitIcarr < 0 },
     { label: "Close-Won", value: integer(wonDeals.length), subtext: `${integer(totalClosed)} closed renewals in scope`, negative: false },
     { label: "Win Rate", value: winRate, subtext: `${integer(lostDeals.length)} close-lost renewals`, negative: false }
   ];
