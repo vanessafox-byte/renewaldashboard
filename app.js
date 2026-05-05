@@ -122,9 +122,9 @@ function applyFilters(data) {
   });
 }
 
-function buildSeatTrendData(data) {
+function buildContractionTrendData(data) {
   return trendThemeMeta.map((theme) => {
-    const rows = data.filter((item) => item.trendTags.includes(theme.key) && item.seats !== 0);
+    const rows = data.filter((item) => item.status === "close-won" && item.seats < 0 && item.trendTags.includes(theme.key));
     return {
       ...theme,
       count: rows.length,
@@ -133,17 +133,20 @@ function buildSeatTrendData(data) {
   });
 }
 
-function buildCloseLostReasonData(data) {
+function buildCloseLostSeatTrendData(data) {
   const counts = data
-    .filter((item) => item.closeLostReason)
+    .filter((item) => item.status === "close-lost" && item.closeLostReason)
     .reduce((map, item) => {
-      map.set(item.closeLostReason, (map.get(item.closeLostReason) || 0) + 1);
+      const current = map.get(item.closeLostReason) || { reason: item.closeLostReason, count: 0, seats: 0 };
+      current.count += 1;
+      current.seats += Math.abs(item.seats);
+      map.set(item.closeLostReason, current);
       return map;
     }, new Map());
 
   return [...counts.entries()]
-    .map(([reason, count]) => ({ reason, count }))
-    .sort((a, b) => b.count - a.count || a.reason.localeCompare(b.reason));
+    .map(([, value]) => value)
+    .sort((a, b) => b.seats - a.seats || b.count - a.count || a.reason.localeCompare(b.reason));
 }
 
 function buildKpis(data) {
@@ -280,8 +283,8 @@ function renderTargetTracker(data) {
 
 function renderTrendInsights(data) {
   if (!document.getElementById("seatTrendList") || !document.getElementById("closeLostReasonList")) return;
-  const seatTrendData = buildSeatTrendData(data);
-  const closeLostReasonData = buildCloseLostReasonData(data);
+  const seatTrendData = buildContractionTrendData(data);
+  const closeLostReasonData = buildCloseLostSeatTrendData(data);
   renderSeatTrendChart(seatTrendData);
   renderCloseLostReasonChart(closeLostReasonData);
 
@@ -290,7 +293,7 @@ function renderTrendInsights(data) {
       (item) => `
         <div class="trend-card">
           <div class="trend-card-title">${item.title}</div>
-          <div class="trend-card-meta">${integer(item.count)} renewals · ${integer(item.seats)} seats reduced</div>
+          <div class="trend-card-meta">${integer(item.count)} contracted renewals · ${integer(item.seats)} seats reduced</div>
           <div class="trend-card-copy">${item.copy}</div>
         </div>
       `
@@ -298,19 +301,19 @@ function renderTrendInsights(data) {
     .join("");
 
   if (!closeLostReasonData.length) {
-    document.getElementById("closeLostReasonList").innerHTML = `<div class="reason-row"><div class="reason-title">No close-lost reasons in scope</div><div class="reason-meta">Adjust the date window or filters to inspect churn reasons.</div></div>`;
+    document.getElementById("closeLostReasonList").innerHTML = `<div class="reason-row"><div class="reason-title">No close-lost seat loss in scope</div><div class="reason-meta">Adjust the date window or filters to inspect churn-driven seat loss.</div></div>`;
     return;
   }
 
-  const maxCount = Math.max(...closeLostReasonData.map((item) => item.count));
+  const maxSeats = Math.max(...closeLostReasonData.map((item) => item.seats));
   document.getElementById("closeLostReasonList").innerHTML = closeLostReasonData
     .map(
       (item) => `
         <div class="reason-row">
           <div class="reason-title">${item.reason}</div>
-          <div class="reason-meta">${integer(item.count)} close-lost renewal${item.count === 1 ? "" : "s"}</div>
+          <div class="reason-meta">${integer(item.count)} close-lost renewal${item.count === 1 ? "" : "s"} · ${integer(item.seats)} seats lost</div>
           <div class="reason-bar">
-            <div class="reason-bar-fill" style="width:${(item.count / maxCount) * 100}%"></div>
+            <div class="reason-bar-fill" style="width:${(item.seats / maxSeats) * 100}%"></div>
           </div>
         </div>
       `
@@ -361,21 +364,21 @@ function renderCloseLostReasonChart(closeLostReasonData) {
   const barHeight = 34;
   const gap = 18;
   if (!closeLostReasonData.length) {
-    svg.innerHTML = `<text x="${width / 2}" y="${height / 2}" text-anchor="middle" font-size="14" fill="#6f5f78">No close-lost reasons in scope for the current filter window.</text>`;
+    svg.innerHTML = `<text x="${width / 2}" y="${height / 2}" text-anchor="middle" font-size="14" fill="#6f5f78">No close-lost seat loss in scope for the current filter window.</text>`;
     return;
   }
-  const maxCount = Math.max(...closeLostReasonData.map((item) => item.count), 1);
+  const maxSeats = Math.max(...closeLostReasonData.map((item) => item.seats), 1);
 
   svg.innerHTML = `
     ${closeLostReasonData
       .map((item, index) => {
         const y = margin.top + index * (barHeight + gap);
-        const valueWidth = (item.count / maxCount) * chartWidth;
+        const valueWidth = (item.seats / maxSeats) * chartWidth;
         return `
           <text x="${margin.left - 16}" y="${y + 20}" text-anchor="end" font-size="12" font-weight="600" fill="#24162d">${item.reason}</text>
           <rect x="${margin.left}" y="${y}" width="${chartWidth}" height="${barHeight}" rx="14" fill="rgba(184, 50, 128, 0.08)" />
           <rect x="${margin.left}" y="${y}" width="${valueWidth}" height="${barHeight}" rx="14" fill="#b83280" />
-          <text x="${Math.min(margin.left + valueWidth + 10, width - margin.right)}" y="${y + 21}" font-size="12" fill="#6f5f78">${integer(item.count)}</text>
+          <text x="${Math.min(margin.left + valueWidth + 10, width - margin.right)}" y="${y + 21}" font-size="12" fill="#6f5f78">${integer(item.seats)} seats</text>
         `;
       })
       .join("")}
